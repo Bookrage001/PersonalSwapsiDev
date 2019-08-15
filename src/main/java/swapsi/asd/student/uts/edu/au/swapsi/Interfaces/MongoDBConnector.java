@@ -5,13 +5,14 @@
  * and MongoDBLab cloud Database. The data is saved dynamically on mLab cloud database as
  * as JSON format.
  */
-package asd.demo.model.dao;
+// package asd.demo.model.dao;
+package swapsi.asd.student.uts.edu.au.swapsi.interfaces;
 
 import java.net.UnknownHostException;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import java.util.*;
-import asd.demo.model.*;
+// import asd.demo.model.*;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCursor;
