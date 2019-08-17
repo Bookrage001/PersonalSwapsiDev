@@ -16,11 +16,9 @@
     </head>
     <body>
        <div class="nav">
-           <a class="active" href="Showcase/showcase.jsp"></a>
-           <span>|</span>
            <a href="#Login/Register">Login/Register</a>
            <span>|</span>
-           <a href="Showcase/showcase.jsp">Showcase</a>
+           <a class="active" href="Showcase/showcase.jsp">Showcase</a>
            <span>|</span>
            <a href="#Posts">Posts</a>
            <span>|</span>
