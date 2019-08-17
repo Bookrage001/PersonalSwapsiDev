@@ -17,6 +17,7 @@
     </head>
     <body>
        <div class="nav">
+           <img source="../logo1.png" id="logo">
            <a href="#Login/Register">Login/Register</a>
            <span>|</span>
            <a class="active" href="Showcase/showcase.jsp">Showcase</a>

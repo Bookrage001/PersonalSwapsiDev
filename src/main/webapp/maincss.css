@@ -8,6 +8,9 @@ body {
     background-color: #f8f8f8;
 }
 
+#logo {
+    float: left;
+}
 /* Text boxes */
 .box1 {
     text-align: center;
