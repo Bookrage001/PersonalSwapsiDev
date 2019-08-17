@@ -9,8 +9,11 @@ body {
 }
 
 #logo {
+    padding: 10px;
+    max-width: 100px;
     float: left;
 }
+
 /* Text boxes */
 .box1 {
     text-align: center;
@@ -25,7 +28,13 @@ body {
     overflow: hidden;
     background-color: #CD6959;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
+}
+
+.nav a.logo {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 .nav a {
@@ -37,7 +46,7 @@ body {
     font-family: Montserrat;
     text-decoration: none;
     height: auto;
-    font-weight:bold;
+    font-weight: normal;
 }
 
 .nav a.active {
@@ -45,6 +54,7 @@ body {
 }
     
 .nav a:hover:not(.active) {
+    padding: 20px;
     background-color: #9B5C4E;
 }
 

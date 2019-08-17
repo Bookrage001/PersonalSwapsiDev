@@ -15,10 +15,13 @@
   </head>
   <body>
     <div class="nav">
-      <img source="../logo1.png" id="logo" />
+      <a class="logo" href="../index.html">SWAPSI</a>
+      <span></span>
+      <span></span>
+      <span></span>
       <a href="#Login/Register">Login/Register</a>
       <span>|</span>
-      <a class="active" href="Showcase/showcase.jsp">Showcase</a>
+      <a class="active" href="showcase.jsp">Showcase</a>
       <span>|</span>
       <a href="#Posts">Posts</a>
       <span>|</span>
