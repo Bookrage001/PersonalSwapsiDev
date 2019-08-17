@@ -7,30 +7,28 @@
 /* Style the navigation bar */
 .nav {
     overflow: hidden;
-    background-color: black;
-	text-align: center;
+    background-color: #CD6959;
+    text-align: left;
     padding: 10px;
 }
 
 .nav a {
-	text-align: center;
+    text-align: center;
     padding: 15px;
     font-size: 18px;
-    color: white;
-    background-color: black;
-    font-family: ABeeZee;
+    color: black;
+    background-color: #CD6959;
+    font-family: Montserrat;
     text-decoration: none;
     height: auto;
     font-weight:bold;
 }
 
 .nav a.active {
-	background-color: black;
-	color: skyblue;
+    color: white;
 }
     
 .nav a:hover:not(.active) {
-	background-color: #e6e6e6;
-	color: skyblue;
+    background-color: #9B5C4E;
 }
 
