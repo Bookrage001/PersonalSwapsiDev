@@ -26,6 +26,19 @@
            <a href="#chat">Chat</a>
            <span>|</span>
            <a href="#User">User Profile</a>
- </div>
+       </div>
+        
+        <div class="box1">
+        </div>
+        
+        <div class="box1">
+        </div>
+        
+        <div class="box1">
+        </div>
+            
+       <div class="footer">
+        <p>@SWAPSI</p>
+       </div>
     </body>
 </html>
