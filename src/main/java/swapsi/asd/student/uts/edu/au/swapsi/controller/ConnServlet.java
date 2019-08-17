@@ -16,24 +16,24 @@ import javax.servlet.http.HttpSession;
  * @author George
  */
 public class ConnServlet extends HttpServlet {
-    private MongoDBConnector connector;  
-     
-    @Override 
+    private MongoDBConnector connector;
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String adminemail = request.getParameter("adminemail1");
-        String adminpass = request.getParameter("Admin1234");
-        connector = new MongoDBConnector(adminemail, adminpass);        
-        response.setContentType("text/html;charset=UTF-8");  
-        HttpSession session = request.getSession();              
-        String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";        
-        
-        session.setAttribute("status", status); 
+        String adminemail = request.getParameter("swapsiUser");
+        String adminpass = request.getParameter("Ppz*wC@70Ysv");
+        connector = new MongoDBConnector(adminemail, adminpass);
+        response.setContentType("text/html;charset=UTF-8");
+        HttpSession session = request.getSession();
+        String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";
+
+        session.setAttribute("status", status);
         session.setAttribute("adminemail", adminemail);
         session.setAttribute("adminpassword", adminpass);
-          
+
         RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
         rs.forward(request, response);
-    }    
-  
+    }
+
 }

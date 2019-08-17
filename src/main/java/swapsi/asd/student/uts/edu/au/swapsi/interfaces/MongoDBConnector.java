@@ -25,17 +25,18 @@ public class MongoDBConnector {
     private List<Document> users = new ArrayList();
     private String owner;
     private String password;
-    private String url = "@ds137101.mlab.com:37101/heroku_q26jljbs";
+    private String url = "@ds163517.mlab.com:63517/heroku_pfsd0sj5";
+    // mongodb://<dbuser>:<dbpassword>@ds163517.mlab.com:63517/heroku_pfsd0sj5
 
-    public MongoDatabase getMongoDB(){
-       MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-       MongoDatabase db;
-       try (MongoClient client = new MongoClient(uri)) {
+    public MongoDatabase getMongoDB() {
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
+        MongoDatabase db;
+        try (MongoClient client = new MongoClient(uri)) {
             db = client.getDatabase(uri.getDatabase());
-       }
-       return db;
+        }
+        return db;
     }
-    
+
     public MongoDBConnector(String owner, String password) throws UnknownHostException {
         this.owner = owner;
         this.password = password;
@@ -51,8 +52,10 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            users.add(new Document("Username", user.getEmail()).append("Password", user.getPassword()).append("Name", user.getName()).append("Phone", user.getPhone()));
-            MongoCollection<Document> userlist = db.getCollection("ASD-Demo-app-users"); //Create a collection ASD-Demo-app-users on mLab
+            users.add(new Document("Username", user.getEmail()).append("Password", user.getPassword())
+                    .append("Name", user.getName()).append("Phone", user.getPhone()));
+            MongoCollection<Document> userlist = db.getCollection("ASD-Demo-app-users"); // Create a collection
+                                                                                         // ASD-Demo-app-users on mLab
             userlist.insertMany(users);
         }
     }
@@ -78,7 +81,8 @@ public class MongoDBConnector {
             users = new Users();
             MongoCollection<Document> userlist = db.getCollection("ASD-Demo-app-users");
             for (Document doc : userlist.find()) {
-                User user = new User((String) doc.get("Name"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Phone"));
+                User user = new User((String) doc.get("Name"), (String) doc.get("Username"),
+                        (String) doc.get("Password"), (String) doc.get("Phone"));
                 users.addUser(user);
             }
         }
@@ -93,7 +97,8 @@ public class MongoDBConnector {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection("ASD-Demo-app-users");
             Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
-            user = new User((String) doc.get("Name"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Phone"));
+            user = new User((String) doc.get("Name"), (String) doc.get("Username"), (String) doc.get("Password"),
+                    (String) doc.get("Phone"));
         }
         return user;
     }
