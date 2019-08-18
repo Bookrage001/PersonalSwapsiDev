@@ -14,60 +14,25 @@
     <title>Showcase Page</title>
   </head>
   <body>
-    <div class="nav">
-        <a class="logo" href="../index.jsp">SWAPSI</a>
-        <a href="../register.jsp">Login/Register</a>
+      <div class="nav">
+          <a class="logo" href="../index.jsp">SWAPSI</a>
+          <a href="../register.jsp">Login/Register</a>
           <span>|</span>
-        <a href="showcase.jsp" class="active">Showcase</a>
+          <a href="showcase.jsp" class="active">Showcase</a>
           <span>|</span>
-        <a href="#Posts">Posts</a>
+          <a href="#Posts">Posts</a>
           <span>|</span>
-        <a href="#chat">Chat</a>
+          <a href="#chat">Chat</a>
           <span>|</span>
-        <a href="#User">User Profile</a>
-    </div>
-    <div class="divcontainer">
-        <div class="content-wrap">
-            
-            <h1 id="h1showcase">Project Community Showcase</h1>
-            
-            <h2 id="h1row">Most Likes</h2>
-    
-            <div class="grid-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
-                <div>4</div>
-            </div>
+          <a href="#User">User Profile</a>
+      </div>
+      
+    <div class="box1"></div>
 
-            <div class="box1" class="div1"></div>
-            
-            <h2 id="h1row">Highest Views</h2>
+    <div class="box1"></div>
     
-            <div class="grid-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
-                <div>4</div>
-            </div>
-    
-            <div class="box1" class="div1"></div>
-            
-            <h2 id="h1row">New Projects</h2>
-    
-            <div class="grid-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
-                <div>4</div>
-            </div>
-    
-            <div class="box1"></div>
-            
-        </div>
+    <div class="box1"></div>
 
     <%@include file="../WEB-INF/Modules/footer.jspf" %>
-    
-    </div>
   </body>
 </html>
