@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="maincss.css" />
+    <link rel="stylesheet" type="text/css" href="../maincss.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -31,6 +31,6 @@
     <p>
     content
     </P>
-      <%@include file="./WEB-INF/Modules/footer.jspf" %>
+      <%@include file="../WEB-INF/Modules/footer.jspf" %>
   </body>
 </html>
