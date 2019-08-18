@@ -30,7 +30,10 @@
           <a href="#User">User Profile</a>
       </div>
         <h1>Hello World!</h1>
+        
         <p class="centered">This is the rego page ?</p>
+        
+        
         <%@include file="WEB-INF/Modules/footer.jspf" %>
     </body>
 </html>

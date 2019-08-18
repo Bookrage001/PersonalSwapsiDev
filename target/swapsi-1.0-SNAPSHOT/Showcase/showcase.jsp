@@ -29,7 +29,9 @@
     <div class="divcontainer">
         <div class="content-wrap">
             
-            <h1 id="h1row">Most Likes</h1>
+            <h1 id="h1showcase">Project Community Showcase</h1>
+            
+            <h2 id="h1row">Most Likes</h2>
     
             <div class="grid-container">
                 <div>1</div>
@@ -40,7 +42,7 @@
 
             <div class="box1" class="div1"></div>
             
-            <h1 id="h1row">Highest Views</h1>
+            <h2 id="h1row">Highest Views</h2>
     
             <div class="grid-container">
                 <div>1</div>
@@ -51,7 +53,7 @@
     
             <div class="box1" class="div1"></div>
             
-            <h1 id="h1row">New Projects</h1>
+            <h2 id="h1row">New Projects</h2>
     
             <div class="grid-container">
                 <div>1</div>
