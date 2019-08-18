@@ -1,12 +1,13 @@
 package swapsi.asd.student.uts.edu.au.swapsi.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Followers  implements Serializable{
 
     private ArrayList<User> list = new ArrayList<>();
 
-    public Users() {
+    public Followers() {
     }
 
     public ArrayList<User> getList() {
@@ -19,15 +20,6 @@ public class Followers  implements Serializable{
 
     public void removeUser(User user) {
         list.remove(user);
-    }
-
-    public void unfollow(String email) {
-        User user = getUser(email);
-        if (user != null) {
-            removeUser(user);
-        } else {
-            System.out.println("User Doesn't exist!");
-        }
     }
 
 }

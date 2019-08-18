@@ -2,12 +2,18 @@ package swapsi.asd.student.uts.edu.au.swapsi.model;
 
 import java.io.Serializable;
 import java.util.*;
+import org.bson.Document;
 
 public class Showcase implements Serializable{
    
     private ArrayList<Showcase> list = new ArrayList<>();
+    private String projectID;
 
     public Showcase() {
+    }
+
+    public Showcase(String string, int i, String string0, String string1, String string2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public ArrayList<Showcase> getList() {
@@ -49,4 +55,13 @@ public class Showcase implements Serializable{
             System.out.println("Project Doesn't exist!");
         }
     }
+
+    public String getProjectID() {
+        return this.projectID;
+    }
+
+    public void add(Document document) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
