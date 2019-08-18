@@ -1,14 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package swapsi.asd.student.uts.edu.au.swapsi.model;
 
-/**
- *
- * @author miche
- */
-public class Project {
+import java.io.Serializable;
+
+public class Project implements Serializable{
+
+    private String name;
+    private String tag;
+    private String description;
+
+
+    public Project() {
     
+    }
+
+    public Project(String name, String tag, String description) {
+        this.name = name;
+        this.tag = tag;
+        this.description= description;
+    }
+
+    
+    public String getName() {
+        return name;
+    }
 }
+
