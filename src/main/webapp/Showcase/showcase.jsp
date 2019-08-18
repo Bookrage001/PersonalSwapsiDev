@@ -29,7 +29,11 @@
     <div class="divcontainer">
         <div class="content-wrap">
             
+            <br/>
+            
             <h1 id="h1showcase">Project Community Showcase</h1>
+            
+            <br/>
             
             <h2 id="h1row">Most Likes</h2>
     
