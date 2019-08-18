@@ -11,12 +11,9 @@
         <link
             href="https://fonts.googleapis.com/css?family=Montserrat"
             rel="stylesheet"
-            />
-        
-          <link rel="stylesheet" type="text/css" href="../maincss.css" />
-
+    />
+        <link rel="stylesheet" type="text/css" href="../maincss.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
         
         <title>SWAPSI</title>
     </head>
