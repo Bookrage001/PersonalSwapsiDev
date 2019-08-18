@@ -6,8 +6,35 @@
 body {
     margin: 0;
     background-color: #f8f8f8;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-image: url("images/BG.png");
+    height: 100%;
+    background-size: cover;
 }
 
+h1 {
+    text-align: center;
+}
+
+#p1 {
+    font-size: 14;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fontsize1 {
+    font-size: 20px;
+}
 /* Text boxes */
 .box1 {
     text-align: center;
@@ -58,5 +85,9 @@ body {
     padding: 20px;
     color: black;
     font-family: Montserrat;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 

@@ -18,7 +18,7 @@
           <a class="logo" href="index.jsp">SWAPSI</a>
           <a href="register.jsp">Login/Register</a>
           <span>|</span>
-          <a href="Showcase/showcase.jsp" Showcase</a>
+          <a href="Showcase/showcase.jsp">Showcase</a>
           <span>|</span>
           <a href="#Posts">Posts</a>
           <span>|</span>
@@ -28,7 +28,7 @@
       </div>
       <h1>Hello World!</h1>
 
-    <p>
+      <p class="centered">
     content
     </P>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
