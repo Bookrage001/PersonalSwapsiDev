@@ -29,7 +29,7 @@
                     <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
                     <tr><td>First Name:</td><td><input type="text" name="firstname"></td></tr>
                     <tr><td>Last Name:</td><td><input type="text" name="lastname"></td></tr>
-                    <tr><td>DOB:</td><td><input type="date" name="dob"></td></tr>
+                    <tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>
                     <tr><td>Location:</td><td><input type="text" name="location"></td></tr>
                     <tr><td></td>
                         <td>
