@@ -11,33 +11,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>JSP Page</title>
+    <title>Showcase Page</title>
   </head>
   <body>
-    <div class="nav">
-      <a class="logo" href="../index.html">SWAPSI</a>
-      <span></span>
-      <span></span>
-      <span></span>
-      <a href="#Login/Register">Login/Register</a>
-      <span>|</span>
-      <a class="active" href="showcase.jsp">Showcase</a>
-      <span>|</span>
-      <a href="#Posts">Posts</a>
-      <span>|</span>
-      <a href="#chat">Chat</a>
-      <span>|</span>
-      <a href="#User">User Profile</a>
-    </div>
-
+    <%@include file="../WEB-INF/Modules/header.jspf" %>
+      
     <div class="box1"></div>
 
     <div class="box1"></div>
 
     <div class="box1"></div>
 
-    <div class="footer">
-      <p>@SWAPSI</p>
-    </div>
+    <%@include file="../WEB-INF/Modules/footer.jspf" %>
   </body>
 </html>

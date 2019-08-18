@@ -1,9 +1,9 @@
 <link rel="stylesheet" type="text/css" href="maincss.css" />
 <div class="nav">
-      <img source="../logo1.png" id="logo" />
+      <a class="logo" href="index.jsp">SWAPSI</a>
       <a href="#Login/Register">Login/Register</a>
       <span>|</span>
-      <a class="active" href="Showcase/showcase.jsp">Showcase</a>
+      <a href="../Showcase/showcase.jsp">Showcase</a>
       <span>|</span>
       <a href="#Posts">Posts</a>
       <span>|</span>
