@@ -14,7 +14,19 @@
     <title>Showcase Page</title>
   </head>
   <body>
-    <%@include file="../WEB-INF/Modules/header.jspf" %>
+      <div class="nav">
+          <a class="logo" href="../index.jsp">SWAPSI</a>
+          <a href="../register.jsp">Login/Register</a>
+          <span>|</span>
+          <a href="showcase.jsp" class="active">Showcase</a>
+          <span>|</span>
+          <a href="#Posts">Posts</a>
+          <span>|</span>
+          <a href="#chat">Chat</a>
+          <span>|</span>
+          <a href="#User">User Profile</a>
+      </div>
+      
     <div class="box1"></div>
 
     <div class="box1"></div>
