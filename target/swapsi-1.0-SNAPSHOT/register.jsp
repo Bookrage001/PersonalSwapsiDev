@@ -18,7 +18,7 @@
     </head>
     <body>
       <div class="nav">
-          <a class="logo" href="../index.jsp">SWAPSI</a>
+          <a class="logo" href="index.jsp">SWAPSI</a>
           <a href="register.jsp" class="active">Login/Register</a>
           <span>|</span>
           <a href="Showcase/showcase.jsp">Showcase</a>
