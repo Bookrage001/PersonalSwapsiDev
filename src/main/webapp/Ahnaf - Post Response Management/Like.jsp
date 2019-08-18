@@ -11,7 +11,7 @@
         <link
             href="https://fonts.googleapis.com/css?family=Montserrat"
             rel="stylesheet"
-    />
+        />
         <link rel="stylesheet" type="text/css" href="../maincss.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
@@ -34,12 +34,20 @@
             <a href="#chat">Chat</a>
             <span>|</span>
             <a href="#User">User Profile</a>
+        
         </div>
+        
+
         
         <h1>This is where the 'Like' feature will be implemented</h1>
         
-        <div class="box1"></div>
-
+        <div>
+            <form action="ActionForName" method="post">
+                <input type="text" name="YourName">
+                <button name="Comment" value="SUBMIT">
+            </form>
+        </div>
+        
         <div class="box1"></div>
 
         <div class="box1"></div>
