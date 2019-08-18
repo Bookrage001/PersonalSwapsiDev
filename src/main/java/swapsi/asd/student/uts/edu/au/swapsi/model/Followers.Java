@@ -21,13 +21,4 @@ public class Followers  implements Serializable{
         list.remove(user);
     }
 
-    public void unfollow(String email) {
-        User user = getUser(email);
-        if (user != null) {
-            removeUser(user);
-        } else {
-            System.out.println("User Doesn't exist!");
-        }
-    }
-
 }
