@@ -9,10 +9,10 @@
 
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="maincss.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register</title>
     </head>
-<<<<<<< HEAD
     <body>
       <div class="nav">
           <a class="logo" href="index.jsp">SWAPSI</a>
@@ -32,7 +32,6 @@
         
         
         <%@include file="WEB-INF/Modules/footer.jspf" %>
-=======
     
     <body>    
         <div>
@@ -80,6 +79,5 @@
 
         <p>Already have a username/password?</p>
         <p> <font color=blue><a href="login.jsp">Return to login page</a></p>
->>>>>>> origin/master
     </body>
 </html>

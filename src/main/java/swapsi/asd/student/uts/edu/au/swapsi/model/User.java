@@ -4,14 +4,11 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-<<<<<<< HEAD
     public String name;
-=======
     private int id;
     private String username;
     private String firstName;
     private String lastName;
->>>>>>> origin/master
     private String email;
     private String password;
     private String DOB;
