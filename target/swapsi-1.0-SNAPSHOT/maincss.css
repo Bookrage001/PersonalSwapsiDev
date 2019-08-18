@@ -8,12 +8,6 @@ body {
     background-color: #f8f8f8;
 }
 
-#logo {
-    padding: 10px;
-    max-width: 100px;
-    float: left;
-}
-
 /* Text boxes */
 .box1 {
     text-align: center;
