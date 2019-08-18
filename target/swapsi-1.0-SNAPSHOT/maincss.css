@@ -119,7 +119,10 @@ h1 {
   padding: 100px 50px;
   font-size: 30px;
 }
-
+.img {
+    
+    background-image: url("images/hello.jpg");
+}
 /* Footer */
 .footer {
     text-align: center;
