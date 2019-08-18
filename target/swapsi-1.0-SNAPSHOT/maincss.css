@@ -119,9 +119,17 @@ h1 {
   padding: 100px 50px;
   font-size: 30px;
 }
-.img {
-    
+
+#img1 {
+    background-image: url("images/WB.png");
+}
+
+#img2 {
     background-image: url("images/hello.jpg");
+}
+
+#img3 {
+    background-image: url("images/BG.png");
 }
 /* Footer */
 .footer {

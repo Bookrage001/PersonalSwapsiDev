@@ -38,7 +38,7 @@
             <h2 id="h1row">Most Likes</h2>
     
             <div class="grid-container">
-                <div class="img"></div>
+                <div id="img1">1</div>
                 <div>2</div>
                 <div>3</div>  
                 <div>4</div>
@@ -50,7 +50,7 @@
             <h2 id="h1row">Highest Views</h2>
     
             <div class="grid-container">
-                <div>1</div>
+                <div id="img2">1</div>
                 <div>2</div>
                 <div>3</div>  
                 <div>4</div>
@@ -61,7 +61,7 @@
             <h2 id="h1row">New Projects</h2>
     
             <div class="grid-container">
-                <div>1</div>
+                <div id="img3">1</div>
                 <div>2</div>
                 <div>3</div>  
                 <div>4</div>
