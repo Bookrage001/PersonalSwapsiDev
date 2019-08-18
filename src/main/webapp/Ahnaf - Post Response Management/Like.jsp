@@ -36,9 +36,7 @@
             <a href="#User">User Profile</a>
         
         </div>
-        
-
-        
+                
         <h1>This is where the 'Like' & Comment feature will be implemented</h1>
         
         <div>
