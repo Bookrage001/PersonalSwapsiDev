@@ -8,25 +8,30 @@
 // package asd.demo.model.dao;
 package swapsi.asd.student.uts.edu.au.swapsi.interfaces;
 
-import java.net.UnknownHostException;
-import com.mongodb.client.MongoCollection;
-import org.bson.Document;
-import java.util.*;
-import swapsi.asd.student.uts.edu.au.swapsi.model.*;
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import com.mongodb.client.MongoCursor;
-import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 
-public class MongoDBConnector {
+import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.List;
 
-    private List<Document> users = new ArrayList();
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
+
+import org.bson.Document;
+
+import swapsi.asd.student.uts.edu.au.swapsi.model.*;
+
+public class FollowerMongoDb {
+
+    private List<Document> FollowerDB = new ArrayList();
     private String owner;
     private String password;
     private String url = "@ds163517.mlab.com:63517/heroku_pfsd0sj5";
-    private String collection = "Users";
+    private String collection = "Followers";
     // mongodb://<dbuser>:<dbpassword>@ds163517.mlab.com:63517/heroku_pfsd0sj5
 
     public MongoDatabase getMongoDB() {
@@ -38,79 +43,92 @@ public class MongoDBConnector {
         return db;
     }
 
-    public MongoDBConnector(String owner, String password) throws UnknownHostException {
+    public FollowerMongoDb(String owner, String password) throws UnknownHostException {
         this.owner = owner;
         this.password = password;
     }
 
-    public void showall(Users users) {
-        for (User u : users.getList()) {
-            System.out.println(u.getUsername());
-        }
-    }
+    // public void showall(Followers followers) {
+    // for (User u : followers.getList()) {
+    // System.out.println(u.getUsername());
+    // }
+    // }
 
-    public void add(User user) {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            users.add(new Document("Id", user.getId()).append("Username", user.getUsername())
-                    .append("FirstName", user.getFirstName()).append("Lastname", user.getLastName())
-                    .append("Email", user.getEmail()).append("Password", user.getPassword())
-                    .append("DOB", user.getDOB()).append("location", user.getLocation()));
-            MongoCollection<Document> userlist = db.getCollection(collection); // Create a collection
-            userlist.insertMany(users);
-        }
-    }
+    // public void set(Followers followers) {
+    // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +
+    // this.password + this.url);
+    // try (MongoClient client = new MongoClient(uri)) {
+    // MongoDatabase db = client.getDatabase(uri.getDatabase());
+    // for (User user : followers)
+    // FollowerDB.add(new Document("Id", user.getId())
+    // .append("Followers", new Document("UserId", "011").append(key, value))
+    // .append("FirstName", user.getFirstName()).append("Lastname",
+    // user.getLastName())
+    // .append("Email", user.getEmail()).append("Password", user.getPassword())
+    // .append("DOB", user.getDOB()).append("location", user.getLocation()));
+    // MongoCollection<Document> userlist = db.getCollection(collection); // Create
+    // a collection
+    // userlist.insertMany(FollowerDB);
+    // }
+    // }
 
-    public void showUsers() {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> userlist = db.getCollection(collection);
-            try (MongoCursor<Document> cursor = userlist.find().iterator()) {
-                while (cursor.hasNext()) {
-                    System.out.println(cursor.next().toJson());
-                }
-            }
-        }
-    }
+    // public void showFollowers() {
+    // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +
+    // this.password + this.url);
+    // try (MongoClient client = new MongoClient(uri)) {
+    // MongoDatabase db = client.getDatabase(uri.getDatabase());
+    // MongoCollection<Document> userlist = db.getCollection(collection);
+    // try (MongoCursor<Document> cursor = userlist.find().iterator()) {
+    // while (cursor.hasNext()) {
+    // System.out.println(cursor.next().toJson());
+    // }
+    // }
+    // }
+    // }
 
-    public Users loadUsers() {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-        Users users;
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            users = new Users();
-            MongoCollection<Document> userlist = db.getCollection(collection);
-            for (Document doc : userlist.find()) {
-                User user = new User((int) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
-                        (String) doc.get("LastName"), (String) doc.get("Email"), (String) doc.get("Password"),
-                        (String) doc.get("DOB"), (String) doc.get("location"));
-                users.addUser(user);
-            }
-        }
-        return users;
-    }
+    // public Followers loadFollowers() {
+    // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +
+    // this.password + this.url);
+    // Followers followers;
+    // try (MongoClient client = new MongoClient(uri)) {
+    // MongoDatabase db = client.getDatabase(uri.getDatabase());
+    // followers = new Followers();
+    // MongoCollection<Document> userlist = db.getCollection(collection);
+    // for (Document doc : userlist.find()) {
+    // User user = new User((int) doc.get("Id"), (String) doc.get("Username"),
+    // (String) doc.get("FirstName"),
+    // (String) doc.get("LastName"), (String) doc.get("Email"), (String)
+    // doc.get("Password"),
+    // (String) doc.get("DOB"), (String) doc.get("location"));
+    // followers.addUser(user);
+    // }
+    // }
+    // return followers;
+    // }
 
-    public User user(String email, String password) {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-        User user;
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> userlist = db.getCollection(collection);
-            Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
-            user = new User((int) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
-                    (String) doc.get("LastName"), (String) doc.get("Email"), (String) doc.get("Password"),
-                    (String) doc.get("DOB"), (String) doc.get("location"));
-        }
-        return user;
-    }
+    // public User user(String email, String password) {
+    // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +
+    // this.password + this.url);
+    // User user;
+    // try (MongoClient client = new MongoClient(uri)) {
+    // MongoDatabase db = client.getDatabase(uri.getDatabase());
+    // MongoCollection<Document> userlist = db.getCollection(collection);
+    // Document doc = userlist.find(and(eq("Username", email), eq("Password",
+    // password))).first();
+    // user = new User((int) doc.get("Id"), (String) doc.get("Username"), (String)
+    // doc.get("FirstName"),
+    // (String) doc.get("LastName"), (String) doc.get("Email"), (String)
+    // doc.get("Password"),
+    // (String) doc.get("DOB"), (String) doc.get("location"));
+    // }
+    // return user;
+    // }
 
-    public int add(int a, int b) {
-        return a + b;
-    }
+    // public int add(int a, int b) {
+    // return a + b;
+    // }
 
-    public int subtract(int a, int b) {
-        return a - b;
-    }
+    // public int subtract(int a, int b) {
+    // return a - b;
+    // }
 }
