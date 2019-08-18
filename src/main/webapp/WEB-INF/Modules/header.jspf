@@ -3,7 +3,11 @@
       <a class="logo" href="index.jsp">SWAPSI</a>
       <a href="#Login/Register">Login/Register</a>
       <span>|</span>
+<<<<<<< HEAD
       <a href="../Showcase/showcase.jsp">Showcase</a>
+=======
+      <a class="active" href="../Showcase/showcase.jsp">Showcase</a>
+>>>>>>> bc9a0fcdafeb5f5f1010a0c9656b4beef4a00769
       <span>|</span>
       <a href="#Posts">Posts</a>
       <span>|</span>

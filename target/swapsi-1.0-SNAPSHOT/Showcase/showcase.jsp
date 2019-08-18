@@ -15,11 +15,15 @@
   </head>
   <body>
     <%@include file="../WEB-INF/Modules/header.jspf" %>
+<<<<<<< HEAD
       
+=======
+
+>>>>>>> bc9a0fcdafeb5f5f1010a0c9656b4beef4a00769
     <div class="box1"></div>
 
     <div class="box1"></div>
-
+    
     <div class="box1"></div>
 
     <%@include file="../WEB-INF/Modules/footer.jspf" %>
