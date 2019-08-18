@@ -14,26 +14,12 @@
     <title>JSP Page</title>
   </head>
   <body>
-    <div class="nav">
-      <a class="logo" href="../index.html">SWAPSI</a>
-      <span></span>
-      <span></span>
-      <span></span>
-      <a href="#Login/Register">Login/Register</a>
-      <span>|</span>
-      <a class="active" href="showcase.jsp">Showcase</a>
-      <span>|</span>
-      <a href="#Posts">Posts</a>
-      <span>|</span>
-      <a href="#chat">Chat</a>
-      <span>|</span>
-      <a href="#User">User Profile</a>
-    </div>
+    <%@include file="../WEB-INF/Modules/header.jspf" %>
 
     <div class="box1"></div>
 
     <div class="box1"></div>
-
+    
     <div class="box1"></div>
 
     <div class="footer">
