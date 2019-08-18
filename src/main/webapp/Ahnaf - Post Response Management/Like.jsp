@@ -37,9 +37,8 @@
         
         </div>
         
-
         
-        <h1>This is where the 'Like' feature will be implemented</h1>
+        <h1>This is where the 'Like' & Comment feature will be implemented</h1>
         
         <div>
             <form action="ActionForName" method="post">
