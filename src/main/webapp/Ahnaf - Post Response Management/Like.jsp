@@ -27,9 +27,9 @@
             <span></span>
             <a href="#Login/Register">Login/Register</a>
             <span>|</span>
-            <a class="active" href="showcase.jsp">Showcase</a>
+            <a href='#showcase'>Showcase</a>
             <span>|</span>
-            <a href="#Posts">Posts</a>
+            <a class="active" href="#Posts">Posts</a>
             <span>|</span>
             <a href="#chat">Chat</a>
             <span>|</span>
@@ -37,6 +37,7 @@
         
         </div>
         
+
         
         <h1>This is where the 'Like' & Comment feature will be implemented</h1>
         
