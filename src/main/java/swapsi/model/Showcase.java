@@ -7,7 +7,7 @@ import org.bson.Document;
 public class Showcase implements Serializable {
 
     private ArrayList<Showcase> list = new ArrayList<>();
-    private String projectID;
+    private String project_id;
 
     public Showcase() {
     }
@@ -29,27 +29,27 @@ public class Showcase implements Serializable {
         list.remove(project);
     }
 
-    public Showcase getProject(String projectID) {
+    public Showcase getProject(String project_id) {
         for (Showcase project : list) {
-            if (project.getProjectID().equals(projectID)) {
+            if (project.getproject_id().equals(project_id)) {
                 return project;
             }
         }
         return null;
     }
 
-    public ArrayList<Showcase> getMatches(String projectID) {
+    public ArrayList<Showcase> getMatches(String project_id) {
         ArrayList<Showcase> matches = new ArrayList<>();
         for (Showcase project : list) {
-            if (project.getProjectID().equals(projectID)) {
+            if (project.getproject_id().equals(project_id)) {
                 matches.add(project);
             }
         }
         return matches;
     }
 
-    public void deleteProject(String projectID, Showcase project) {
-        project = getProject(projectID);
+    public void deleteProject(String project_id, Showcase project) {
+        project = getProject(project_id);
         if (project != null) {
             removeProject(project);
         } else {
@@ -57,8 +57,8 @@ public class Showcase implements Serializable {
         }
     }
 
-    public String getProjectID() {
-        return this.projectID;
+    public String getproject_id() {
+        return this.project_id;
     }
 
     public void add(Document document) {

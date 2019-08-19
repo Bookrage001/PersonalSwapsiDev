@@ -61,7 +61,7 @@ public class FollowerMongoDb {
     // MongoDatabase db = client.getDatabase(uri.getDatabase());
     // for (User user : followers)
     // FollowerDB.add(new Document("Id", user.getId())
-    // .append("Followers", new Document("UserId", "011").append(key, value))
+    // .append("Followers", new Document("user_id", "011").append(key, value))
     // .append("FirstName", user.getFirstName()).append("Lastname",
     // user.getLastName())
     // .append("Email", user.getEmail()).append("Password", user.getPassword())

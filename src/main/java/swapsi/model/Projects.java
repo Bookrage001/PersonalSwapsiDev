@@ -22,27 +22,27 @@ public class Projects implements Serializable {
         list.remove(project);
     }
 
-    public Project getProject(String projectID) {
+    public Project getProject(int project_id) {
         for (Project project : list) {
-            if (project.getProjectID().equals(projectID)) {
+            if (project.getProject_id() == project_id) {
                 return project;
             }
         }
         return null;
     }
 
-    public ArrayList<Project> getMatches(String projectID) {
+    public ArrayList<Project> getMatches(int project_id) {
         ArrayList<Project> matches = new ArrayList<>();
         for (Project project : list) {
-            if (project.getProjectID().equals(projectID)) {
+            if (project.getProject_id() == project_id) {
                 matches.add(project);
             }
         }
         return matches;
     }
 
-    public void deleteProject(String projectID) {
-        Project project = getProject(projectID);
+    public void deleteProject(int project_id) {
+        Project project = getProject(project_id);
         if (project != null) {
             removeProject(project);
         } else {

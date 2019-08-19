@@ -42,7 +42,7 @@ public class MongoDBConnector2 {
 
     public void showall(Showcase showcase) {
         for (Showcase s : showcase.getList()) {
-            System.out.println(s.getProjectID());
+            System.out.println(s.getproject_id());
         }
     }
 
@@ -50,7 +50,7 @@ public class MongoDBConnector2 {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            showcase.add(new Document("ProjectID", showcase.getProjectID()));
+            showcase.add(new Document("project_id", showcase.getproject_id()));
             MongoCollection<Document> showcaselist = db.getCollection(collection); // Create a collection
             showcaselist.insertMany((List<? extends Document>) showcase);
         }
@@ -77,7 +77,7 @@ public class MongoDBConnector2 {
             Showcases showcases = new Showcases();
             MongoCollection<Document> showcaselist = db.getCollection(collection);
             for (Document doc : showcaselist.find()) {
-                Showcase showcase = new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"),
+                Showcase showcase = new Showcase((String) doc.get("project_id"), (int) doc.get("user_id"),
                         (String) doc.get("Name"), (String) doc.get("Tag"), (String) doc.get("Description"));
                 showcases.add(showcase);
             }
@@ -86,14 +86,14 @@ public class MongoDBConnector2 {
         return showcases;
     }
 
-    public Showcase showcase(String projectID, String name) {
+    public Showcase showcase(String project_id, String name) {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
         User user;
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> showcaselist = db.getCollection(collection);
-            Document doc = showcaselist.find(and(eq("ProjectID", projectID), eq("Name", name))).first();
-            showcase = (List<Document>) new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"),
+            Document doc = showcaselist.find(and(eq("project_id", project_id), eq("Name", name))).first();
+            showcase = (List<Document>) new Showcase((String) doc.get("project_id"), (int) doc.get("user_id"),
                     (String) doc.get("Name"), (String) doc.get("Tag"), (String) doc.get("Description"));
         }
         return (Showcase) showcase;
@@ -120,7 +120,7 @@ public class MongoDBConnector2 {
 
     private static class project {
 
-        private static Object getProjectID() {
+        private static Object getproject_id() {
             throw new UnsupportedOperationException("Not supported yet."); // To change body of generated methods,
                                                                            // choose Tools | Templates.
         }

@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Project implements Serializable {
 
-    private String projectID;
-    private int userID;
+    private int project_id;
+    private int user_id;
     private String name;
     private String tag;
     private String description;
@@ -14,28 +14,28 @@ public class Project implements Serializable {
 
     }
 
-    public Project(String projectID, int userID, String name, String tag, String description) {
-        this.projectID = projectID;
-        this.userID = userID;
+    public Project(int project_id, int user_id, String name, String tag, String description) {
+        this.project_id = project_id;
+        this.user_id = user_id;
         this.name = name;
         this.tag = tag;
         this.description = description;
     }
 
-    public String getProjectID() {
-        return this.projectID;
+    public int getProject_id() {
+        return this.project_id;
     }
 
-    public void setProjectID() {
-        this.projectID = projectID;
+    public void setProject_id(int project_id) {
+        this.project_id = project_id;
     }
 
-    public int getUserID() {
-        return this.userID;
+    public int getUser_id() {
+        return this.user_id;
     }
 
-    public void setID() {
-        this.userID = userID;
+    public void setId(int user_id) {
+        this.user_id = user_id;
     }
 
     public String getName() {

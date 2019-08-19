@@ -5,19 +5,19 @@ import java.util.*;
 
 public class Follower implements Serializable {
 
-    private int userId;
+    private int user_id;
     private ArrayList<Integer> followers = new ArrayList<Integer>();
 
     public Follower() {
     }
 
-    public Follower(int userId, ArrayList<Integer> followers) {
-        this.userId = userId;
+    public Follower(int user_id, ArrayList<Integer> followers) {
+        this.user_id = user_id;
         this.followers = followers;
     }
 
-    public Follower(int userId, int followerId) {
-        this.userId = userId;
+    public Follower(int user_id, int followerId) {
+        this.user_id = user_id;
         this.followers.add(followerId);
     }
 
@@ -33,8 +33,8 @@ public class Follower implements Serializable {
         followers.remove(uid);
     }
 
-    public int getUserId() {
-        return userId;
+    public int getuser_id() {
+        return user_id;
     }
 
 }
