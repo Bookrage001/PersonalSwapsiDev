@@ -12,14 +12,7 @@
     </head>
     <body>
         <%@include file="./WEB-INF/Modules/navbar.jspf" %>
-        <h1>Hello World!</h1>
-
-        <p class="w-centered">
-            Add Post Prototype
-        </P>
-        <textarea rows="5" cols="60">
-            What is in your mind
-        </textarea>
+        <%@include file="./WEB-INF/Modules/add_post.jspf" %>
         <%@include file="./WEB-INF/Modules/footer.jspf" %>
     </body>
 </html>
