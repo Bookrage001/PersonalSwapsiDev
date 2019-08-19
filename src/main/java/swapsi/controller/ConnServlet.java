@@ -1,6 +1,6 @@
-package swapsi.asd.student.uts.edu.au.swapsi.controller;
+package swapsi.controller;
 
-import swapsi.asd.student.uts.edu.au.swapsi.interfaces.MongoDBConnector;
+import swapsi.model.dao.MongoDBConnector;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

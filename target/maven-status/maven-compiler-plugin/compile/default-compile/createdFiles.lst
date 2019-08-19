@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 swapsi\asd\student\uts\edu\au\swapsi\model\Project.class
 swapsi\asd\student\uts\edu\au\swapsi\model\Showcase.class
@@ -9,3 +10,9 @@ swapsi\asd\student\uts\edu\au\swapsi\model\Projects.class
 swapsi\asd\student\uts\edu\au\swapsi\interfaces\MongoDBConnector.class
 swapsi\asd\student\uts\edu\au\swapsi\model\Followers.class
 >>>>>>> origin/master
+=======
+swapsi\controller\ConnServlet.class
+swapsi\model\Users.class
+swapsi\model\dao\MongoDBConnector.class
+swapsi\model\User.class
+>>>>>>> origin/Register-Search

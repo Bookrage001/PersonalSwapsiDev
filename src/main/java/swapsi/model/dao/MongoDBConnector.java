@@ -6,13 +6,14 @@
  * as JSON format.
  */
 // package asd.demo.model.dao;
-package swapsi.asd.student.uts.edu.au.swapsi.interfaces;
+package swapsi.model.dao;
 
+import swapsi.model.User;
+import swapsi.model.Users;
 import java.net.UnknownHostException;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import java.util.*;
-import swapsi.asd.student.uts.edu.au.swapsi.model.*;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCursor;
