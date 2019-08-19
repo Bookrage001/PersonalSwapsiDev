@@ -1,4 +1,4 @@
-package swapsi.model;
+package swapsi.model.follower;
 
 import java.io.Serializable;
 

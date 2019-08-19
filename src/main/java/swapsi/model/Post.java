@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package asd.SWAPSI.model;
+package swapsi.model;
 
 import java.io.Serializable;
 
@@ -12,7 +12,7 @@ import java.io.Serializable;
  *
  * @author Mark Galulu
  */
-public class Post implements Serializable{
+public class Post implements Serializable {
 
     private int POST_ID;
     private String POST_TEXT;
@@ -23,7 +23,8 @@ public class Post implements Serializable{
     private String POST_PRIVACY;
     private User USER_ID;
 
-    public Post(int POST_ID, String POST_TEXT, int POST_COMMENT_NUM, int POST_LIKE_NUM, String POST_TIMESTAMP, String POST_PRIVACY, User USER_ID) {
+    public Post(int POST_ID, String POST_TEXT, int POST_COMMENT_NUM, int POST_LIKE_NUM, String POST_TIMESTAMP,
+            String POST_PRIVACY, User USER_ID) {
         this.POST_ID = POST_ID;
         this.POST_TEXT = POST_TEXT;
         this.POST_COMMENT_NUM = POST_COMMENT_NUM;
@@ -96,6 +97,5 @@ public class Post implements Serializable{
     public void setUSER_ID(User USER_ID) {
         this.USER_ID = USER_ID;
     }
-    
-    
+
 }

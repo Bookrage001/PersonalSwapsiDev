@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package asd.SWAPSI.model;
+package swapsi.model;
 
 import java.util.ArrayList;
 
@@ -14,10 +14,9 @@ import java.util.ArrayList;
  */
 public class Posts {
 
-    
     private ArrayList<Post> list = new ArrayList<>();
 
-    private Posts(){
+    private Posts() {
         super();
     }
 
@@ -25,21 +24,21 @@ public class Posts {
         return list;
     }
 
-    public void createPost(Post post){
+    public void createPost(Post post) {
         list.add(post);
     }
-    
-    public void deletePost(Post post){
+
+    public void deletePost(Post post) {
         list.remove(post);
     }
-    
-    public Post fetchPost(int post_id, int user_id){
-        for(Post post : list){
-            if(post.getPOST_ID() == post_id && post.getUSER_ID().equals(user_id)){
+
+    public Post fetchPost(int post_id, int user_id) {
+        for (Post post : list) {
+            if (post.getPOST_ID() == post_id && post.getUSER_ID().equals(user_id)) {
                 return post;
             }
         }
         return null;
     }
-    
+
 }
