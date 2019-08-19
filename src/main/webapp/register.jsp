@@ -21,7 +21,7 @@
     <body>
         <%@include file="./WEB-INF/Modules/navbar.jspf" %>
         <div>
-            <form action="index.jsp" method="POST">
+            <form action="welcome.jsp" method="POST">
                 <h1>Registration</h1>
                 <table align="center">
                     <tr><td>Username:</td><td><input type="text" name="username"></td></tr>

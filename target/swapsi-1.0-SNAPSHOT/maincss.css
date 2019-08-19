@@ -1,11 +1,11 @@
 
 /* 
-    Created on : 17/08/2019, 11:41:48 PM
-    Author     : miche
+    Created on : 19/08/2019, 11:41:48 PM
+    Author     : Hayley
 */
 
 body {
-    margin: 0px;
+    margin: 0;
     background-color: #CCCDCB;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -27,40 +27,46 @@ h1 {
 }
 
 .w-strong {
-    font-weight: bold;
+    font-weight: 500;
+    text-height: 16px;
 }
 
 /**********Style Navigation Bar************/
-.w-nav img{
-    height: 40px;
-    padding: 5px;
+.w-nav {
+    background-color: #CD6959;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
 }
 
-.w-nav {
-    overflow: hidden;
-    background-color: #CD6959;
+.w-nav > img{
+    margin-right: auto;
+    height: 40px;
 }
 
 .w-nav-right {
-    float: right;
+    display: flex;
 }
 
-.w-nav a {
-    background-color: #CD6959;
-    text-align: center;
-    padding: 10px;
-    font-size: 22px;
+.w-nav-right > a{
+    border-right: 1px solid rgba(0,0,0,0.16);
+    padding: 8px 24px;
+    font-size: 22px;    
+    text-decoration: none;    
     color: black;
-    text-decoration: none;
-    font-weight: 500;
 }
 
-.w-nav a.active {
+.w-nav-right > a:last-child {
+    border-right: none;
+}
+
+.w-nav-right a.active {
     color: #FCBC7C;
 }
     
-.w-nav a:hover:not(.active) {
-    background-color: #9B5C4E;
+.w-nav-right a:hover:not(.active) {
+    color: #FCBC7C;
 }
 
 /**********Style Footer************/
