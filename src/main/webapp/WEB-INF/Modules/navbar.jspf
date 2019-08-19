@@ -1,0 +1,12 @@
+<div class="w-nav">
+    <img src="images/logo_swapsi.png" alt="Logo">
+    <div class="w-nav-right">
+        <a href="#">Discover</a>
+        <span>|</span>
+        <a href="#">Projects</a>
+        <span>|</span>
+        <a href="#">Profile</a>
+        <span>|</span>
+        <a href="register.jsp">Register</a>
+    </div>
+</div>
