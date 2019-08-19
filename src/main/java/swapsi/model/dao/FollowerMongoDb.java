@@ -23,7 +23,7 @@ import com.mongodb.client.MongoDatabase;
 
 import org.bson.Document;
 
-import swapsi.asd.student.uts.edu.au.swapsi.model.*;
+import swapsi.model.*;
 
 public class FollowerMongoDb {
 
@@ -48,11 +48,11 @@ public class FollowerMongoDb {
         this.password = password;
     }
 
-    public void showall(Follower follower) {
-        for (int u : follower.getFolowers()) {
-            System.out.println(u.getUsername());
-        }
-    }
+    // public void showall(Follower follower) {
+    // for (int u : follower.getFolowers()) {
+    // System.out.println(u.getUsername());
+    // }
+    // }
 
     // public void set(Followers followers) {
     // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +
