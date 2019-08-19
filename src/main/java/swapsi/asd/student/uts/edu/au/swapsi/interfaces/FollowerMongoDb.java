@@ -48,11 +48,11 @@ public class FollowerMongoDb {
         this.password = password;
     }
 
-    // public void showall(Followers followers) {
-    // for (User u : followers.getList()) {
-    // System.out.println(u.getUsername());
-    // }
-    // }
+    public void showall(Follower follower) {
+        for (int u : follower.getFolowers()) {
+            System.out.println(u.getUsername());
+        }
+    }
 
     // public void set(Followers followers) {
     // MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" +

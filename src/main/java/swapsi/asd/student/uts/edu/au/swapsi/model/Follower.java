@@ -6,7 +6,7 @@ import java.util.*;
 public class Follower implements Serializable {
 
     private int userId;
-    private private ArrayList<Integer> followers = new ArrayList<Integer>();
+    private ArrayList<Integer> followers = new ArrayList<Integer>();
 
     public Follower() {
     }
@@ -14,6 +14,11 @@ public class Follower implements Serializable {
     public Follower(int userId, ArrayList<Integer> followers) {
         this.userId = userId;
         this.followers = followers;
+    }
+
+    public Follower(int userId, int followerId) {
+        this.userId = userId;
+        this.followers.add(followerId);
     }
 
     public ArrayList<Integer> getFolowers() {

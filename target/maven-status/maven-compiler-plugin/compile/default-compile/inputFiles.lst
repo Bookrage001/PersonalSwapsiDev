@@ -1,5 +1,7 @@
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\controller\ConnServlet.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\interfaces\MongoDBConnector.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\Users.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\interfaces\FollowerMongoDb.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\User.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\controller\ConnServlet.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\Followers.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\interfaces\MongoDBConnector.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\Users.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\interfaces\FollowerMongoDb.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\Follower.java
+c:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\asd\student\uts\edu\au\swapsi\model\User.java
