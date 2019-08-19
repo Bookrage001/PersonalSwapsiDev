@@ -19,7 +19,18 @@
     </head>
 
     <body>
-        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
+        <div class="nav">
+          <a class="logo" href="index.jsp">SWAPSI</a>
+          <a href="register.jsp">Login/Register</a>
+          <span>|</span>
+          <a href="Showcase/showcase.jsp">Showcase</a>
+          <span>|</span>
+          <a href="#Posts">Posts</a>
+          <span>|</span>
+          <a href="#chat">Chat</a>
+          <span>|</span>
+          <a href="#User">User Profile</a>
+      </div>
         <div>
             <form action="welcome.jsp" method="POST">
                 <h1>Registration</h1>

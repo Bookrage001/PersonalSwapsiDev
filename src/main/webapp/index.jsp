@@ -1,12 +1,5 @@
-
-<%-- 
-    Document   : welcome
-    Created on : 19/08/2019, 1:32:53 PM
-    Author     : Hayley
---%>
-
-<%@page import="swapsi.model.*"%>
-<%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
+<%-- Document : index Created on : 18/08/2019, 3:03:43 AM Author : caleb --%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,4 +24,9 @@
       </div>
       <h1>Hello World!</h1>
 
+      <p class="centered">
+    content
+    </P>
+      <%@include file="./WEB-INF/Modules/footer.jspf" %>
+  </body>
 </html>
