@@ -29,5 +29,4 @@ public class Followers  implements Serializable{
             System.out.println("User Doesn't exist!");
         }
     }
-
 }
