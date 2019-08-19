@@ -1,5 +1,4 @@
-package swapsi.asd.student.uts.edu.au.swapsi.model;
-
+packageswapsi.asd.student.uts.edu.au.swapsi.model; 
 import java.io.Serializable;
 import java.util.*;
 
@@ -37,3 +36,27 @@ public class Followers implements Serializable {
     }
 
 }
+
+
+
+
+
+  
+
+    
+
+    
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+

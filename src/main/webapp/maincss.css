@@ -8,8 +8,7 @@ body {
     background-color: #f8f8f8;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-image: url("images/BG.png");
-    height: 100%;
+    /*background-image: url("images/BG.png");*/
     background-size: cover;
 }
 
@@ -17,8 +16,21 @@ h1 {
     text-align: center;
 }
 
+#h1showcase {
+    color: black;
+    font-size: 30px;
+    font-family: Montserrat;
+    text-shadow: 2px 2px #CD6959;
+}
+
+#h1row {
+    color: #9B5C4E;
+    text-align: center;
+    font-family: Montserrat;
+}
+
 #p1 {
-    font-size: 14;
+    font-size: 15px;
 }
 
 .centered {
@@ -44,6 +56,19 @@ h1 {
     font-size: 18px;
 }
 
+.div1 {
+    width: 300px;
+    height: 100px;
+}
+
+.divcontainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
 /* Style the navigation bar */
 .nav {
     overflow: hidden;
@@ -79,13 +104,40 @@ h1 {
     background-color: #9B5C4E;
 }
 
+/*Grid Containers - Carousel?*/
+.grid-container {
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    padding: 40px;
+}
+
+.grid-container > div {
+  background-color: #CCCDCB;
+  text-align: center;
+  padding: 100px 50px;
+  font-size: 30px;
+}
+
+#img1 {
+    background-image: url("images/WB.png");
+}
+
+#img2 {
+    background-image: url("images/hello.jpg");
+}
+
+#img3 {
+    background-image: url("images/BG.png");
+}
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
     color: black;
     font-family: Montserrat;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
