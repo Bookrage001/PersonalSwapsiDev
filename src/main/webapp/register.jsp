@@ -9,9 +9,29 @@
 
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="maincss.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register</title>
     </head>
+    <body>
+      <div class="nav">
+          <a class="logo" href="index.jsp">SWAPSI</a>
+          <a href="register.jsp" class="active">Login/Register</a>
+          <span>|</span>
+          <a href="Showcase/showcase.jsp">Showcase</a>
+          <span>|</span>
+          <a href="#Posts">Posts</a>
+          <span>|</span>
+          <a href="#chat">Chat</a>
+          <span>|</span>
+          <a href="#User">User Profile</a>
+      </div>
+        <h1>Hello World!</h1>
+        
+        <p class="centered">This is the rego page ?</p>
+        
+        
+        <%@include file="WEB-INF/Modules/footer.jspf" %>
     
     <body>    
         <div>
