@@ -1,3 +1,4 @@
-<div class="w-footer">
-    <p class="w-strong">SWAPSI copyrights 2019</p> 
+<div class="footer" class="fontsize1">
+      <p class="bold">SWAPSI</p>
+      <p id="p1">© 2019</p>
 </div>
