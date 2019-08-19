@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package swapsi.asd.student.uts.edu.au.swapsi.interfaces;
+package swapsi.model.dao;
 
 import java.net.UnknownHostException;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import java.util.*;
-import swapsi.asd.student.uts.edu.au.swapsi.model.*;
+import swapsi.model.*;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCursor;
@@ -77,8 +77,8 @@ public class MongoDBConnector2 {
             Showcases showcases = new Showcases();
             MongoCollection<Document> showcaselist = db.getCollection(collection);
             for (Document doc : showcaselist.find()) {
-                Showcase showcase  = new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"), (String) doc.get("Name"),
-                        (String) doc.get("Tag"), (String) doc.get("Description"));
+                Showcase showcase = new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"),
+                        (String) doc.get("Name"), (String) doc.get("Tag"), (String) doc.get("Description"));
                 showcases.add(showcase);
             }
         }
@@ -93,8 +93,8 @@ public class MongoDBConnector2 {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> showcaselist = db.getCollection(collection);
             Document doc = showcaselist.find(and(eq("ProjectID", projectID), eq("Name", name))).first();
-            showcase = (List<Document>) new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"), (String) doc.get("Name"),
-                    (String) doc.get("Tag"), (String) doc.get("Description"));
+            showcase = (List<Document>) new Showcase((String) doc.get("ProjectID"), (int) doc.get("UserID"),
+                    (String) doc.get("Name"), (String) doc.get("Tag"), (String) doc.get("Description"));
         }
         return (Showcase) showcase;
     }
@@ -113,18 +113,19 @@ public class MongoDBConnector2 {
         }
 
         private void add(Showcase showcase) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            throw new UnsupportedOperationException("Not supported yet."); // To change body of generated methods,
+                                                                           // choose Tools | Templates.
         }
     }
 
     private static class project {
 
         private static Object getProjectID() {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            throw new UnsupportedOperationException("Not supported yet."); // To change body of generated methods,
+                                                                           // choose Tools | Templates.
         }
 
         public project() {
         }
     }
 }
-

@@ -6,7 +6,7 @@
  * as JSON format.
  */
 // package asd.demo.model.dao;
-package swapsi.asd.student.uts.edu.au.swapsi.interfaces;
+package swapsi.model.dao;
 
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;

@@ -1,10 +1,10 @@
-package swapsi.asd.student.uts.edu.au.swapsi.model;
+package swapsi.model;
 
 import java.io.Serializable;
 import java.util.*;
 
-public class Projects implements Serializable{
-   
+public class Projects implements Serializable {
+
     private ArrayList<Project> list = new ArrayList<>();
 
     public Projects() {
@@ -50,4 +50,3 @@ public class Projects implements Serializable{
         }
     }
 }
-

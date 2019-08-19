@@ -1,4 +1,4 @@
-package swapsi.asd.student.uts.edu.au.swapsi.model;
+package swapsi.model;
 
 import java.io.Serializable;
 
