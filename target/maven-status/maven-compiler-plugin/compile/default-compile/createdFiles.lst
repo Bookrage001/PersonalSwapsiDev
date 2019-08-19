@@ -1,4 +1,8 @@
+swapsi\asd\student\uts\edu\au\swapsi\model\Project.class
+swapsi\asd\student\uts\edu\au\swapsi\model\Showcase.class
 swapsi\asd\student\uts\edu\au\swapsi\controller\ConnServlet.class
 swapsi\asd\student\uts\edu\au\swapsi\model\Users.class
 swapsi\asd\student\uts\edu\au\swapsi\model\User.class
+swapsi\asd\student\uts\edu\au\swapsi\model\Projects.class
 swapsi\asd\student\uts\edu\au\swapsi\interfaces\MongoDBConnector.class
+swapsi\asd\student\uts\edu\au\swapsi\model\Followers.class
