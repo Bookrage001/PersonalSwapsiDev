@@ -22,23 +22,32 @@
 # In this example, @doctocat owns any files in the build/logs
 # directory at the root of the repository and any of its
 # subdirectories.
-/build/logs/ @doctocat
+# /build/logs/ @doctocat
 
 # The `docs/*` pattern will match files like
 # `docs/getting-started.md` but not further nested files like
 # `docs/build-app/troubleshooting.md`.
-docs/*  docs@example.com
+# docs/*  docs@example.com
 
 # In this example, @octocat owns any file in an apps directory
 # anywhere in your repository.
-apps/ @octocat
+# apps/ @octocat
 
 # In this example, @doctocat owns any file in the `/docs`
 # directory in the root of your repository.
-/src/main/webapp/Dashboard @Bookrage001
-/src/main/webapp/Showcase @michellejonatan
-/src/main/java/swapsi/model/follower @Bookrage001
+# /docs/ @doctocat
 
+# Everyones files
+/src/main/webapp/Dashboard @Bookrage001
+Follower* @Bookrage001
+/src/main/java/swapsi/model/follower @Bookrage001
+/src/main/webapp/Showcase @michellejonatan
+register* @hclaud
+post* @McChaseA
+Post* @McChaseA
+Project* @msmsarian
+user* @hclaud @msmsarian
+User* @hclaud @msmsarian
 
 # Design Team
 *.css @hclaud @McChaseA @michellejonatan
