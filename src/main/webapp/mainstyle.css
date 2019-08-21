@@ -114,3 +114,47 @@ form::after {
     clear: both;
     display: table;
 }
+
+/**********Search Bar Style************/
+
+/*.w-nav .search-container {
+    float: left;
+}
+
+.w-nav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.w-nav .search-container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.w-nav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .w-nav .search-container {
+    float: none;
+  }
+  .w-nav a, .w-nav input[type=text], .w-nav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .w-nav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}*/

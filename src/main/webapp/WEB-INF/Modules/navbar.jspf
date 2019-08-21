@@ -1,6 +1,12 @@
 <div class="w-nav">
     <img src="images/logo_swapsi.png" alt="Logo">
-    <div class="w-nav-right">
+    <!--    <div class="search-container">
+            <form action="/action_page.jsp">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>-->
+    <div class="w-nav-right">        
         <a href="#">Discover</a>
         <span>|</span>
         <a href="#">Projects</a>
