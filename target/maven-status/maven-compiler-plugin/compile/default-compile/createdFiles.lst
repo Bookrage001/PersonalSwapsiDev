@@ -1,5 +1,4 @@
 swapsi\model\dao\MongoDBConnector2$project.class
-swapsi\model\follower\Follower.class
 swapsi\model\Post.class
 swapsi\model\dao\MongoDBConnector2.class
 swapsi\model\Project.class
