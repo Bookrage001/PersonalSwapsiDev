@@ -6,6 +6,7 @@ swapsi\controller\ConnServlet.class
 swapsi\model\Users.class
 swapsi\model\User.class
 swapsi\model\dao\MongoDBConnector2$Showcases.class
+swapsi\model\Follower.class
 swapsi\model\dao\MongoDBConnector.class
 swapsi\model\Projects.class
 swapsi\model\dao\FollowerMongoDb.class

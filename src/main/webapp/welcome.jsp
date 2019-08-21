@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="maincss.css"/> 
+        <link rel="stylesheet" href="mainstyle.css"/> 
         <title>Welcome Page</title>
     </head>
 
