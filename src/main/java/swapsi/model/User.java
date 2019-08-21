@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
+    public String name;
     private int id;
     private String username;
     private String firstName;
@@ -17,7 +18,8 @@ public class User implements Serializable {
 
     }
 
-    public User(int id, String username, String firstName, String lastName ,  String email, String password, String DOB, String Location) {
+    public User(int id, String username, String firstName, String lastName, String email, String password, String DOB,
+            String Location) {
         this.username = username;
         this.email = email;
         this.password = password;
