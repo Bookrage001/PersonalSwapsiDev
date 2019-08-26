@@ -8,8 +8,7 @@
 // package asd.demo.model.dao;
 package swapsi.model.dao;
 
-import swapsi.model.User;
-import swapsi.model.Users;
+import swapsi.model.*;
 import java.net.UnknownHostException;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
