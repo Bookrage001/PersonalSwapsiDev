@@ -3,7 +3,7 @@
 <div class="w-nav">
     <img src="images/logo_swapsi.png" alt="Logo" align="center">
     <div class="search-container">
-        <form action="/action_page.jsp">
+        <form action="./WEB-INF/search.jsp">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
