@@ -13,7 +13,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author George
+ * @author Caleb
  */
 public class ConnServlet extends HttpServlet {
     private MongoDBConnector connector;

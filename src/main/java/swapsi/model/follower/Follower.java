@@ -1,31 +1,32 @@
-package swapsi.model;
+package swapsi.model.follower;
 
 import java.io.Serializable;
 import java.util.*;
 
 public class Follower implements Serializable {
 
-    private int user_id;
-    private ArrayList<Integer> followers = new ArrayList<Integer>();
+    private String user_id;
+    private ArrayList<String> followers = new ArrayList<String>();
 
-    public Follower() {
+    public Follower(String user_id) {
+        this.user_id = user_id;
     }
 
-    public Follower(int user_id, ArrayList<Integer> followers) {
+    public Follower(String user_id, ArrayList<String> followers) {
         this.user_id = user_id;
         this.followers = followers;
     }
 
-    public Follower(int user_id, int followerId) {
+    public Follower(String user_id, String followerId) {
         this.user_id = user_id;
         this.followers.add(followerId);
     }
 
-    public ArrayList<Integer> getFolowers() {
+    public ArrayList<String> getFolowers() {
         return followers;
     }
 
-    public void addFollower(int uid) {
+    public void addFollower(String uid) {
         followers.add(uid);
     }
 
@@ -33,7 +34,7 @@ public class Follower implements Serializable {
         followers.remove(uid);
     }
 
-    public int getuser_id() {
+    public String getuser_id() {
         return user_id;
     }
 
