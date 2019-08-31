@@ -32,10 +32,8 @@ public class MongoDBConnector {
 
     public MongoDatabase getMongoDB() {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
-        MongoDatabase db;
-        try (MongoClient client = new MongoClient(uri)) {
-            db = client.getDatabase(uri.getDatabase());
-        }
+        MongoClient client = new MongoClient(uri);
+        MongoDatabase db = client.getDatabase(uri.getDatabase());
         return db;
     }
 
