@@ -13,8 +13,8 @@ public class FollowerDbConnectorTest {
 
     @Test
     public void addFollower() {
-        FollowerDbConnector db = new FollowerDbConnector("swapsiAdmin", "TJVv58JmWmdPTX5jaM5T5RwXyp7n7xQAd8U2wGt");
-        db.addFollower("User1", "User2");
+        FollowerDbConnector db = new FollowerDbConnector();
+        db.addFollower("AUser", "AnotherUser");
 
     }
 

@@ -1,6 +1,6 @@
 package swapsi.controller;
 
-import swapsi.model.dao.MongoDBConnector;
+import swapsi.model.dao.mLabMongoDbConnector;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
  * @author Caleb
  */
 public class ConnServlet extends HttpServlet {
-    private MongoDBConnector connector;
+    private mLabMongoDbConnector connector;
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -24,14 +24,14 @@ public class ConnServlet extends HttpServlet {
         String adminemail = System.getenv("ADMINEMAIL");
         String adminpass = System.getenv("ADMINPASSWORD");
 
-        connector = new MongoDBConnector(adminemail, adminpass);
+//        connector = new mLabMongoDbConnector();
         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";
 
-        session.setAttribute("status", status);
-        session.setAttribute("adminemail", adminemail);
-        session.setAttribute("adminpassword", adminpass);
+//        session.setAttribute("status", status);
+//        session.setAttribute("adminemail", adminemail);
+//        session.setAttribute("adminpassword", adminpass);
 
         RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
         rs.forward(request, response);
