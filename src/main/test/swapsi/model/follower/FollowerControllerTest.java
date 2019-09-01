@@ -12,7 +12,7 @@ public class FollowerDbConnectorTest {
     }
 
     @Test
-    public void addFollower() {
+    public void addFollowers() {
         FollowerDbConnector db = new FollowerDbConnector();
         db.addFollower("AUser", "AnotherUser");
 
