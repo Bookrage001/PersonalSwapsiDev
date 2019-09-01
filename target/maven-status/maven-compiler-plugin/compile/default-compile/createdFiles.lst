@@ -1,8 +1,10 @@
 swapsi\model\Follower.class
 swapsi\model\Post.class
+swapsi\controller\Validator.class
 swapsi\model\dao\MongoDBConnector.class
 swapsi\model\Project.class
 swapsi\model\Projects.class
+swapsi\controller\ValidatorServlet.class
 swapsi\controller\ConnServlet.class
 swapsi\model\Users.class
 swapsi\model\Showcase.class

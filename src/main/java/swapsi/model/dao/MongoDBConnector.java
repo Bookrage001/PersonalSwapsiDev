@@ -49,6 +49,7 @@ public class MongoDBConnector {
         }
     }
 
+    //newww
     public void add(User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + this.url);
         try (MongoClient client = new MongoClient(uri)) {
@@ -83,7 +84,7 @@ public class MongoDBConnector {
             users = new Users();
             MongoCollection<Document> userlist = db.getCollection(collection);
             for (Document doc : userlist.find()) {
-                User user = new User((int) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
+                User user = new User((String) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
                         (String) doc.get("LastName"), (String) doc.get("Email"), (String) doc.get("Password"),
                         (String) doc.get("DOB"), (String) doc.get("location"));
                 users.addUser(user);
@@ -99,7 +100,7 @@ public class MongoDBConnector {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection(collection);
             Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
-            user = new User((int) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
+            user = new User((String) doc.get("Id"), (String) doc.get("Username"), (String) doc.get("FirstName"),
                     (String) doc.get("LastName"), (String) doc.get("Email"), (String) doc.get("Password"),
                     (String) doc.get("DOB"), (String) doc.get("location"));
         }
