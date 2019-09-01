@@ -1,4 +1,5 @@
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\MongoDBConnector.java
+C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\MongoDBConnectorDEPRICATED.java
+C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\follower\FollowerController.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Project.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\User.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Showcase.java
@@ -6,10 +7,8 @@ C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\follower\Foll
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Users.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Post.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\controller\ConnServlet.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\FollowerDbConnector.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Projects.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\test\DBTests\FollowersTests.java
-C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\MongoDBConnector2.java
+C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\MongoDBConnector2DEPRICATED.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\follower\Follower.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\dao\mLabMongoDbConnector.java
 C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\java\swapsi\model\Posts.java

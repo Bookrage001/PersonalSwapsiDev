@@ -1,6 +1,8 @@
 package swapsi.controller;
 
 import swapsi.model.dao.mLabMongoDbConnector;
+import swapsi.model.follower.Followers;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,11 +20,29 @@ import javax.servlet.http.HttpSession;
 public class ConnServlet extends HttpServlet {
     private mLabMongoDbConnector connector;
 
+    private Followers followers;
+
+
+    @Override // Create and instance of DBConnector for the deployment session
+    public void init() {
+        followers = new Followers();
+    }
+
+    @Override // Add the classes instances to the session
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+        response.setContentType("text/html;charset=UTF-8");
+        HttpSession session = request.getSession();
+
+        session.setAttribute("followers", followers);
+    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String adminemail = System.getenv("ADMINEMAIL");
-        String adminpass = System.getenv("ADMINPASSWORD");
+        // Old boilerplate code
+
+//        String adminemail = System.getenv("ADMINEMAIL");
+//        String adminpass = System.getenv("ADMINPASSWORD");
 
 //        connector = new mLabMongoDbConnector();
         response.setContentType("text/html;charset=UTF-8");

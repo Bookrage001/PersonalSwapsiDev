@@ -35,7 +35,10 @@ public class Follower implements Serializable {
     }
 
     public String getuser_id() {
-        return user_id;
+        return this.user_id;
+    }
+    public ArrayList<String> getFollowers_id() {
+        return followers;
     }
 
 }

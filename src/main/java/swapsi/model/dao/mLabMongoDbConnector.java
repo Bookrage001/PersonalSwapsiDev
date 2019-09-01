@@ -47,9 +47,12 @@ public class mLabMongoDbConnector {
             MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
             System.out.println(JSON.serialize(document));
             collectionDoc.insertOne(document);
+//            System.out.println(collection.;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
-    
+
     @Override
     public String toString(){
         String passwordstatus;

@@ -1,10 +1,8 @@
-package swapsi.model.dao;
+package swapsi.model.follower;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class FollowerDbConnectorTest {
+public class FollowerControllerTest {
 
     @Test
     public void getMongoDB() {
@@ -13,9 +11,8 @@ public class FollowerDbConnectorTest {
 
     @Test
     public void addFollowers() {
-        FollowerDbConnector db = new FollowerDbConnector();
-        db.addFollower("AUser", "AnotherUser");
-
+        FollowerController db = new FollowerController();
+        db.addFollower("AnewUser", "AnotherUser");
     }
 
     @Test

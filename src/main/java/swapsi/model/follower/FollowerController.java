@@ -1,50 +1,73 @@
 /*
  * Author: Caleb Ardern
  *
- * This class provides the methods to establish a connection between swapsi  
+ * This class provides the methods to establish a connection between swapsi
  * and the mlab MongoDBLab cloud Database. The data is saved dynamically on mLab cloud database as
  * as JSON format.
  */
 
-package swapsi.model.dao;
+package swapsi.model.follower;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-import swapsi.model.follower.Follower;
+import swapsi.model.dao.mLabMongoDbConnector;
 
 //import javax.print.Doc;
 
-public class FollowerDbConnector {
-    // This class inherits from mLabMongoDbConnector
-    private List<Document> followers = new ArrayList<Document>();
+public class FollowerController {
+    private List<Document> data = new ArrayList<Document>();
+    private Followers followers = new Followers();
     private String collectionName = "Followers";
-//    private MongoCollection<Document> db;
-    private mLabMongoDbConnector connecton;
+    private mLabMongoDbConnector connection;
 
-    public  FollowerDbConnector () {
-        connecton = new mLabMongoDbConnector(this.collectionName);
+    /**
+     * Initiates the DB connection.
+     */
+    public FollowerController() {
+        connection = new mLabMongoDbConnector(this.collectionName);
     }
 
+    /**
+     * The class used by external classes to add/create a follower to a user
+     * @param user_Id
+     * @param follower_Id
+     */
+    public void addFollower(String user_Id, String follower_Id) {
+        Follower couple = new Follower(user_Id, follower_Id);
+        followers.addUser(couple);
+        // If the user exists already add the follower to an existing follower
+//        addDoc();
 
-    private void add(String user_Id, String follower_Id) {
+        // If the user does not have a followers list then create it
+        createFollower(couple);
+    }
 
-            followers.add(new Document( "user_Id", user_Id).append("Followers", follower_Id));
-            Document doc = new Document("user_Id", user_Id).append("Followers", follower_Id);
-            connecton.add(doc);
+    /**
+     * The class used by this controller to add a follower to an existing follower list.
+     * @param follower
+     */
+    private void addDoc(Follower follower) {
+
     }
-    public void addFollower(String user_Id, String follower_Id ) {
-        add(user_Id, follower_Id);
+
+    /**
+     * Creates a new user list with a follower in the DB
+     * @param follower
+     */
+    private void createFollower(Follower follower) {
+        Document doc = new Document("user_Id", follower.getuser_id()).append("Followers", follower.getFolowers());
+        data.add(doc);
+        connection.add(doc);
     }
-    public Document getFollower(String user_Id) {
+
+    /**
+     * Will get the Follower from the DB
+     * @param user_Id
+     * @return
+     */
+    public Follower getFollower(String user_Id) {
         return null;
     }
-
-    public void update() {
-
-    }
-
 }

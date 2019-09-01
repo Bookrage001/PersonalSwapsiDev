@@ -19,8 +19,8 @@ public class FollowersTest {
     }
 
     @Test
-    public void addFollower() {
+    public void addFollowers() {
         Followers followers = new Followers();
-        followers.addFollower("user1", "user2");
+        followers.addFollowers("user1", "user2");
     }
 }

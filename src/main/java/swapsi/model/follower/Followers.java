@@ -20,12 +20,12 @@ public class Followers implements Serializable {
         return list;
     }
 
-    private void addUser(Follower user) {
-        list.add(user);
+    public void addUser(Follower couple) {
+        list.add(couple);
     }
 
-    public void removeUser(Follower user) {
-        list.remove(user);
+    public void removeUser(Follower couple) {
+        list.remove(couple);
     }
 
     public Follower getUser(String Id) {
@@ -37,7 +37,7 @@ public class Followers implements Serializable {
         return null;
     }
 
-    public void addFollower(String user_Id, String follower_Id) {
+    public void addFollowers(String user_Id, String follower_Id) {
         if (getUser(user_Id) == null) {
             Follower f = new Follower(user_Id);
             f.addFollower(follower_Id);
