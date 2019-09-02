@@ -20,7 +20,6 @@ import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.util.JSON;
 import org.bson.Document;
 import com.mongodb.client.MongoCollection;
-import java.net.UnknownHostException;
 
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
@@ -39,18 +38,43 @@ public class mLabMongoDbConnector {
         url = "mongodb://" + this.owner + ":" + this.password + "@" + this.dbUrl;
     }
 
-    public void add(Document document) {
+    public MongoCollection<Document> collection() {
         System.out.println("Getting Mongo DB");
         System.out.println(this.toString());
-        try (MongoClient mongoClient = new MongoClient(new MongoClientURI(url))) {
-            MongoDatabase db = mongoClient.getDatabase(this.dbName);
-            MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
-            System.out.println(JSON.serialize(document));
-            collectionDoc.insertOne(document);
-//            System.out.println(collection.;
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        MongoClient mongoClient = new MongoClient(new MongoClientURI(url));
+        MongoDatabase db = mongoClient.getDatabase(this.dbName);
+        MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
+        return collectionDoc;
+    }
+
+    public void add(Document document) {
+        MongoCollection<Document> collection = collection();
+        System.out.println(JSON.serialize(document));
+        collection.insertOne(document);
+    }
+
+    /**
+     *
+     * @param query
+     * @param order
+     */
+    public Document get(Document query, Document order) {
+        MongoCollection<Document> collection = collection();
+
+        MongoCursor<Document> cursor = collection.find(query).sort(order).iterator();
+
+        Document retrunData = new Document();
+        int x = 0;
+        try {
+            while (cursor.hasNext()) {
+                Document doc = cursor.next();
+                retrunData.append( x + "" , doc);
+                x++;
+            }
+        } finally {
+            cursor.close();
         }
+        return retrunData;
     }
 
     @Override

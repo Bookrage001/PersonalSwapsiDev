@@ -17,6 +17,8 @@ public class FollowerControllerTest {
 
     @Test
     public void getFollower() {
+        FollowerController db = new FollowerController();
+
     }
 
     @Test

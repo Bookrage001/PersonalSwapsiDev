@@ -17,7 +17,13 @@ import swapsi.model.dao.mLabMongoDbConnector;
 //import javax.print.Doc;
 
 public class FollowerController {
+    /**
+     * this controllers list of followers as data
+     */
     private List<Document> data = new ArrayList<Document>();
+    /**
+     * This
+     */
     private Followers followers = new Followers();
     private String collectionName = "Followers";
     private mLabMongoDbConnector connection;
@@ -38,10 +44,14 @@ public class FollowerController {
         Follower couple = new Follower(user_Id, follower_Id);
         followers.addUser(couple);
         // If the user exists already add the follower to an existing follower
+         Follower existing  = getFollower(user_Id);
+        if (getFollower(user_Id)  != null) {
 //        addDoc();
+        } else {
+            // If the user does not have a followers list then create it
+            createFollower(couple);
+        }
 
-        // If the user does not have a followers list then create it
-        createFollower(couple);
     }
 
     /**
@@ -64,10 +74,17 @@ public class FollowerController {
 
     /**
      * Will get the Follower from the DB
-     * @param user_Id
-     * @return
+     * @param user_Id UniqueId - Search key
+     * @return Follower
      */
     public Follower getFollower(String user_Id) {
+        Document query = new Document();
+        Document order = new Document();
+//        connection.get(query, order);
         return null;
+    }
+    public ArrayList<String> listUserFollower(String user_Id) {
+        Follower following = getFollower(user_Id);
+        return following.getFolowers();
     }
 }
