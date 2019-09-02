@@ -4,45 +4,68 @@
     Author     : Hayley
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="swapsi.controller.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "x" %>
 <!DOCTYPE html>
-<link href="maincss.css" rel="stylesheet" type="text/css">
 
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-        <link rel="stylesheet" type="text/css" href="maincss.css" />
+        <link rel="stylesheet" type="text/css" href="mainstyle.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Register</title>
     </head>
+    
+    <%
+        
+        String emailError = request.getParameter("emailError");
+        String passwordError = request.getParameter("passwordError");
+        String emptyError = request.getParameter("empty");
+    %>
 
     <body>
-        <div class="nav">
-          <a class="logo" href="index.jsp">SWAPSI</a>
-          <a href="register.jsp">Login/Register</a>
-          <span>|</span>
-          <a href="Showcase/showcase.jsp">Showcase</a>
-          <span>|</span>
-          <a href="#Posts">Posts</a>
-          <span>|</span>
-          <a href="#chat">Chat</a>
-          <span>|</span>
-          <a href="#User">User Profile</a>
-      </div>
+        <%@include file="./WEB-INF/Modules/navbar.jspf"%>
         <div>
             <form action="welcome.jsp" method="POST">
                 <h1>Registration</h1>
                 <table align="center">
-                    <tr><td>Username:</td><td><input type="text" name="username"></td></tr>
-                    <tr><td>Email:</td><td><input type="text" name="email"></td></tr>
-                    <tr><td>Password:</td><td><input type="password" name="password"></td></tr>
-                    <tr><td>First Name:</td><td><input type="text" name="firstname"></td></tr>
-                    <tr><td>Last Name:</td><td><input type="text" name="lastname"></td></tr>
-                    <tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>
-                    <tr><td>Location:</td><td><input type="text" name="location"></td></tr>
-                    <tr><td></td>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" name="username" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>Email:</td><td><input type="text" name="email" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${passError!=null}"><x:out value="${passError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td
+                        ><td><input type="text" name="firstName" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="lastName" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" name="DOB" required="true"></td> 
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td><input type="text" name="location" required="true"></td>
+                        &emsp;<span class="error"><x:if test="${emailError!=null}"><x:out value="${emailError}"/></x:if></span>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td>
                             <input type="submit" value="Register"> 
                         </td>
