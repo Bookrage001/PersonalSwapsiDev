@@ -26,6 +26,7 @@
 
       <p class="centered">
     content
+          <%@include file="./WEB-INF/Modules/followers.jspf"%>
     </P>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
   </body>

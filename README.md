@@ -31,3 +31,10 @@ by Mark Galulu
 #### Environment: Maven
 #### Language: Java/JS
 #### Software: Netbeans
+## Development Setup
+
+Enter these commands get the username and password from heroku mlab
+
+`set adminemail=<adminEmail>`
+
+`set adminpassword=<adminPass>`
