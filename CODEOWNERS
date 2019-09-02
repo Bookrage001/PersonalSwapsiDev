@@ -47,7 +47,6 @@
 /src/main/java/swapsi/model/Post* @McChaseA
 /src/main/java/swapsi/model/Project* @msmsarian
 
-# Project* @msmsarian
 
 # Design Team
-*.css @hclaud @McChaseA @michellejonatan
+*main*.css @hclaud @McChaseA @michellejonatan
