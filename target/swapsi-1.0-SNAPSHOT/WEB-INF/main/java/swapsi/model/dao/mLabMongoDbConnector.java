@@ -31,7 +31,7 @@ public class mLabMongoDbConnector {
 
 
     public mLabMongoDbConnector(String collection) {
-        this.owner = System.getenv("ADMINEMAIL");
+        this.owner = System.getenv("ADMINEMAIL");;
         System.out.println(System.getenv("ADMINEMAIL"));
         this.password = System.getenv("ADMINPASSWORD");
         this.collection = collection;

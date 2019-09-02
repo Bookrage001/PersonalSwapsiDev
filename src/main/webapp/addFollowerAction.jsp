@@ -16,5 +16,6 @@
         FollowerController followers = new FollowerController();
         followers.addFollower(myUsername, followerUsername);
     %>
+Follower Has been added
 </body>
 </html>
