@@ -1,113 +1,75 @@
 <%-- 
     Document   : Like
     Created on : Aug 18, 2019, 7:07:22 PM
-    Author     : ahnaf
+    Author     : Ahnaf
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<link href="maincss.css" rel="stylesheet" type="text/css">
+
 <html>
     <head>
-        <link
-            href="https://fonts.googleapis.com/css?family=Montserrat"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="../maincss.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>Posts</title>
+        <title>Posts</title>        
     </head>
+        
     <body>
         <div class="nav">
             <a class="logo" href="../index.html">SWAPSI</a>
-            <span></span>
-            <span></span>
-            <span></span>
-            <a href="#Login/Register">Login/Register</a>
+            <a href="register.jsp">Login/Register</a> 
             <span>|</span>
-            <a href='#showcase'>Showcase</a>
+            <a href="Showcase/showcase.jsp">Showcase</a>
             <span>|</span>
-            <a class="active" href="#Posts">Posts</a>
+            <%-- previously added <a class="active" href="../post.jsp">Posts</a> --%> 
+            <a href="Ahnaf _Post_Response_Management/like.jsp">Posts</a>
             <span>|</span>
             <a href="#chat">Chat</a>
             <span>|</span>
             <a href="#User">User Profile</a>
-        
         </div>
-                        
-        <style>
-            h1 { 
-              display: block;
-              font-size: 2em;
-              margin-top: 0.67em;
-              margin-bottom: 0.67em;
-              margin-left: 0;
-              margin-right: 0;
-              font-weight: bold;
-            }
-        </style>
-        </head>
-        <body>
+    </body>
 
-        <p>Below is a sample 'post'</p>
+    <p>On this page is a sample post. Post feature to be completed by another team member</p>
 
-        <h1>- PROJECT CARS -</h1>
+    <h2>- SAMPLE POST -</h2>
+       
+    <h2>-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -</h2>
         
-        </body>   
-    
-        <body>
-            <div>
-                <img src="Capture.JPG" alt="" align="center"/>        
-            </div>
+    <body>
+        <h3>Number of Likes: </h3>
+     
+        <%-- <a href="#" class="button">LIKE!</a> --%>
+           <button name="LIKE!" value="CONFIRM">LIKE</button>
+    </body>
 
-        </body>
-        
-        <%--Styling buttons--%> 
-        <h5>Likes - 83</h5>
-
-        
-        <h2>-   -   -   -   -   -   -   -   -   -   -   -</h2>
-        
-        <style>
-            .button {
-              background-color: #ff0000;
-              border: none;
-              color: white;
-              padding: 15px 32px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              cursor: pointer;
-            }
-        </style>
-        </head>
-        <body>
-
-
-        <a href="#" class="button">LIKE!</a>
-            
-        <h2>-   -   -   -   -   -   -   -   -   -   -   -</h2>
-        
-        </body>
- 
-       <%--Text Box--%> 
-
-        <body>
-            <form action="./ActionForName" method="post">
-                <input type="text" name="YourComment">
-                <button name="Comment" value="SUBMIT">ADD COMMENT</button>
+        <h2>-   -   -   -   -   -   -   -  -  -   -   -   -   -   -  -   -   -   - -   -   -   -</h2>
+                
+    <div>
+        <form action="welcome.jsp" method="POST">
+                <h3>Number of Comments: </h3>
+                <table align="left">
+                    <tr><td>COMMENTS</td><td><input type="text" name="Comment"></td></tr>
+                        <td>
+                            <input type="submit" value="SUBMIT"> 
+                        </td>
+                    </tr>
+                </table>
             </form>
-        </body>
-
-            <div class="box1"></div>
-
-        </body>
-</html>
+    </div>
    
     </body>
+    
+    <%-- mdules to be added from from post.jsp
+    <body>
+        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
+        <%@include file="./WEB-INF/Modules/add_post.jspf" %>
+        <%@include file="./WEB-INF/Modules/footer.jspf" %>
+    </body>
+    --%>
     
 </html>
