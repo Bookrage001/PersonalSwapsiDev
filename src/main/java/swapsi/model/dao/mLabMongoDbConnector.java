@@ -20,7 +20,6 @@ import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.util.JSON;
 import org.bson.Document;
 import com.mongodb.client.MongoCollection;
-import java.net.UnknownHostException;
 
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
@@ -32,27 +31,64 @@ public class mLabMongoDbConnector {
 
 
     public mLabMongoDbConnector(String collection) {
-        this.owner = System.getenv("ADMINEMAIL");;
+        this.owner = System.getenv("ADMINEMAIL");
         System.out.println(System.getenv("ADMINEMAIL"));
         this.password = System.getenv("ADMINPASSWORD");
         this.collection = collection;
         url = "mongodb://" + this.owner + ":" + this.password + "@" + this.dbUrl;
     }
 
-    public void add(Document document) {
+    /**
+     * Initiate the conection to the db and returns the collection
+     * @return MongoDB Collection
+     */
+    public MongoCollection<Document> collection() {
         System.out.println("Getting Mongo DB");
         System.out.println(this.toString());
-        try (MongoClient mongoClient = new MongoClient(new MongoClientURI(url))) {
-            MongoDatabase db = mongoClient.getDatabase(this.dbName);
-            MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
-            System.out.println(JSON.serialize(document));
-            collectionDoc.insertOne(document);
-//            System.out.println(collection.;
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        MongoClient mongoClient = new MongoClient(new MongoClientURI(url));
+        MongoDatabase db = mongoClient.getDatabase(this.dbName);
+        MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
+        return collectionDoc;
     }
 
+    /**
+     * Adds a single item to the collection.
+     * @param document
+     */
+    public void add(Document document) {
+        MongoCollection<Document> collection = collection();
+        System.out.println(JSON.serialize(document));
+        collection.insertOne(document);
+    }
+
+    /**
+     * gets items from the collection depending on the provided parameters
+     * @param query
+     * @param order
+     */
+    public Document get(Document query, Document order) {
+        MongoCollection<Document> collection = collection();
+
+        MongoCursor<Document> cursor = collection.find(query).sort(order).iterator();
+
+        Document retrunData = new Document();
+        int x = 0;
+        try {
+            while (cursor.hasNext()) {
+                Document doc = cursor.next();
+                retrunData.append( x + "" , doc);
+                x++;
+            }
+        } finally {
+            cursor.close();
+        }
+        return retrunData;
+    }
+
+    /**
+     * Some usfull information about how this class is running.
+     * @return
+     */
     @Override
     public String toString(){
         String passwordstatus;
