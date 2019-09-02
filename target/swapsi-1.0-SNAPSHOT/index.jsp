@@ -13,6 +13,10 @@
       <%@include file="./WEB-INF/Modules/navbar.jspf"%>      
       <h1 align="center">Hello World!</h1>
 
+      <p class="centered">
+    content
+          <%@include file="./WEB-INF/Modules/followers.jspf"%>
+    </P>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
   </body>
 </html>
