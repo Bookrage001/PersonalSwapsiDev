@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import org.bson.Document;
 import swapsi.model.dao.mLabMongoDbConnector;
 
@@ -82,9 +81,11 @@ public class FollowerController {
         System.out.println("Here i am lord");
         System.out.println(data.get("0").get("user_Id"));
         Follower follower = new Follower((String)data.get("0").get("user_Id"));
-//        this.pareseFollower((BasicDBObject)data.get("0"));
-//        Follower follower = data.
-//        this.updateFollower(follower);
+        ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
+        for (String user: users
+             ) {
+            follower.addFollower(user);
+        }
         return follower;
     }
 

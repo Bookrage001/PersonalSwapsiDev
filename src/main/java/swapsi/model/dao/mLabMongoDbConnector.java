@@ -18,6 +18,8 @@ import com.mongodb.util.JSON;
 import org.bson.Document;
 import com.mongodb.client.MongoCollection;
 
+import javax.print.Doc;
+
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
     private String dbUrl = "ds163517.mlab.com:63517" + "/" + this.dbName;
@@ -78,6 +80,9 @@ public class mLabMongoDbConnector {
             cursor.close();
         }
         return retrunData;
+    }
+    public void update(Document doc) {
+
     }
 
     /**
