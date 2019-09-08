@@ -10,7 +10,10 @@ package swapsi.model.follower;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 import org.bson.Document;
 import swapsi.model.dao.mLabMongoDbConnector;
 
@@ -73,11 +76,25 @@ public class FollowerController {
      * @return Follower
      */
     public Follower getFollower(String user_Id) {
-        Document query = new Document();
-        Document order = new Document();
-//        connection.get(query, order);
-        return null;
+        Document query = new Document("user_Id", user_Id);
+        Map<String, Map> data = connection.get(query).toMap();
+        System.out.println(data);
+        System.out.println("Here i am lord");
+        System.out.println(data.get("0").get("user_Id"));
+        Follower follower = new Follower((String)data.get("0").get("user_Id"));
+//        this.pareseFollower((BasicDBObject)data.get("0"));
+//        Follower follower = data.
+//        this.updateFollower(follower);
+        return follower;
     }
+
+    private Follower pareseFollower(BasicDBObject data) {
+        System.out.println("Umm");
+        System.out.println(data.get("user_Id"));
+//        Follower follower = new Follower(data.get("user_Id"));
+        return null;
+    };
+
 
     /**
      * Will list the followers that this user has.

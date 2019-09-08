@@ -41,4 +41,12 @@ public class Follower implements Serializable {
         return followers;
     }
 
+    @Override
+    public String toString() {
+        String output = "";
+        for (String user:followers) {
+            output = output + "," + user;
+        }
+        return "["+ this.user_id + "],[" + output + "]";
+    }
 }

@@ -8,10 +8,7 @@
 
 package swapsi.model.dao;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientException;
-import com.mongodb.MongoClientURI;
-import com.mongodb.MongoCredential;
+import com.mongodb.*;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.and;
@@ -64,19 +61,17 @@ public class mLabMongoDbConnector {
     /**
      * gets items from the collection depending on the provided parameters
      * @param query
-     * @param order
      */
-    public Document get(Document query, Document order) {
+    public BasicDBObject get(Document query) {
         MongoCollection<Document> collection = collection();
+        MongoCursor<Document> cursor = collection.find(query).iterator();
 
-        MongoCursor<Document> cursor = collection.find(query).sort(order).iterator();
-
-        Document retrunData = new Document();
+        BasicDBObject retrunData = new BasicDBObject();
         int x = 0;
         try {
             while (cursor.hasNext()) {
                 Document doc = cursor.next();
-                retrunData.append( x + "" , doc);
+                retrunData.put( x + "" , doc);
                 x++;
             }
         } finally {
@@ -86,7 +81,7 @@ public class mLabMongoDbConnector {
     }
 
     /**
-     * Some usfull information about how this class is running.
+     * Some useful information about how this class is running.
      * @return
      */
     @Override

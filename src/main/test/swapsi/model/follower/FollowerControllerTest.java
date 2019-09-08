@@ -18,7 +18,8 @@ public class FollowerControllerTest {
     @Test
     public void getFollower() {
         FollowerController db = new FollowerController();
-
+        Follower follower = db.getFollower("AnewUser");
+        System.out.println(follower.toString());
     }
 
     @Test
