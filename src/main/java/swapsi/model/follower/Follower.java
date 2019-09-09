@@ -45,8 +45,12 @@ public class Follower implements Serializable {
     public String toString() {
         String output = "";
         for (String user:followers) {
-            output = output + "," + user;
+            if (output == "") {
+                output = user;
+            } else {
+                output = output + "," + user;
+            }
         }
-        return "["+ this.user_id + "],[" + output + "]";
+        return "["+ this.user_id + "][" + output + "]";
     }
 }

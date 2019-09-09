@@ -38,13 +38,16 @@ public class FollowerController {
      * @param follower_Id
      */
     public void addFollower(String user_Id, String follower_Id) {
+        System.out.println("Adding Follower");
         Follower couple = new Follower(user_Id, follower_Id);
         followers.addUser(couple);
         // If the user exists already add the follower to an existing follower
          Follower existing  = getFollower(user_Id);
-        if (getFollower(user_Id)  != null) {
-//        addDoc();
+        if (existing  != null) {
+            System.out.println("There is an existing follower Add new follower");
+            updateFollower(existing, follower_Id);
         } else {
+            System.out.println("There is no existing follower Create one");
             // If the user does not have a followers list then create it
             createFollower(couple);
         }
@@ -55,8 +58,11 @@ public class FollowerController {
      * The class used by this controller to add a follower to an existing follower list.
      * @param follower
      */
-    private void updateFollower(Follower follower) {
-
+    private void updateFollower(Follower follower , String user_Id) {
+        follower.addFollower(user_Id);
+        Document find = new Document("user_Id", follower.getuser_id());
+        Document doc = new Document(this.parseFollower(follower));
+        connection.update(find, doc );
     }
 
     /**
@@ -70,32 +76,41 @@ public class FollowerController {
     }
 
     /**
-     * Will get the Follower from the DB
+     * Will get the Follower from the DB and return as a java Follower object
      * @param user_Id UniqueId - Search key
      * @return Follower
      */
     public Follower getFollower(String user_Id) {
         Document query = new Document("user_Id", user_Id);
-        Map<String, Map> data = connection.get(query).toMap();
-        System.out.println(data);
-        System.out.println("Here i am lord");
-        System.out.println(data.get("0").get("user_Id"));
+        return this.parseFollower(connection.get(query));
+    }
+
+    /**
+     * Converts follower to a doc
+     * @param follower
+     * @return Document
+     */
+    private Document parseFollower(Follower follower){
+        return new Document("user_Id", follower.getuser_id()).append("Followers", follower.getFolowers());
+    }
+
+    /**
+     * Converts A document into a follower
+     * @param doc
+     * @return
+     */
+    private Follower parseFollower(BasicDBObject doc) {
+        System.out.println("parseFollower");
+        Map<String, Map> data = doc.toMap();
         Follower follower = new Follower((String)data.get("0").get("user_Id"));
         ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
         for (String user: users
-             ) {
+        ) {
             follower.addFollower(user);
         }
         return follower;
+
     }
-
-    private Follower pareseFollower(BasicDBObject data) {
-        System.out.println("Umm");
-        System.out.println(data.get("user_Id"));
-//        Follower follower = new Follower(data.get("user_Id"));
-        return null;
-    };
-
 
     /**
      * Will list the followers that this user has.

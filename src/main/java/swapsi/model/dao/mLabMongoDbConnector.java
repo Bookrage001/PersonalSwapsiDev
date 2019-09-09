@@ -81,8 +81,9 @@ public class mLabMongoDbConnector {
         }
         return retrunData;
     }
-    public void update(Document doc) {
-
+    public void update(Document search, Document replace) {
+        MongoCollection<Document> collection = collection();
+        collection.replaceOne(search, replace);
     }
 
     /**
