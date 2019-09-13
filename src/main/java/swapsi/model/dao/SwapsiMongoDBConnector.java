@@ -18,7 +18,7 @@ public class SwapsiMongoDBConnector {
 
     public SwapsiMongoDBConnector(String collection) {
         this.collection = collection;
-        url = "mongodb://AdminMark:swapsi1@" + this.dbUrl;
+        url = "mongodb://adminHayley:swapsi1@" + this.dbUrl;
     }
     
     /**

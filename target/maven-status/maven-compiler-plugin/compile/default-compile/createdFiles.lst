@@ -1,0 +1,9 @@
+swapsi\model\Follower.class
+swapsi\model\User\User.class
+swapsi\model\User\UserController.class
+swapsi\model\dao\SwapsiMongoDBConnector.class
+swapsi\model\Project.class
+swapsi\model\User\Users.class
+swapsi\model\Projects.class
+swapsi\controller\ConnServlet.class
+swapsi\model\Showcase.class

@@ -4,9 +4,10 @@
     Author     : Hayley
 --%>
 
-<%@page import="swapsi.model.dao.MongoDBConnector"%>
-<%@page import="swapsi.model.*"%>
+<%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
+<%@page import="swapsi.model.User.UserController"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,9 +27,12 @@
         String DOB = request.getParameter("DOB");
         String location = request.getParameter("location");
         
+        UserController users = new UserController();
+        users.addUser(id, username, firstName, lastName, email, password, DOB, location);
+        
         //new Logic
-        User user = new User(id, username, firstName, lastName, email, password, DOB, location);
-        session.setAttribute("user", user);
+//        User user = new User(id, username, firstName, lastName, email, password, DOB, location);
+//        session.setAttribute("user", user);
 
 //        String adminemail = (String) session.getAttribute("adminemail");
 //        String adminpass = (String) session.getAttribute("adminpassword");

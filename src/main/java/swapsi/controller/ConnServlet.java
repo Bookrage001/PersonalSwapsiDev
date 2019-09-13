@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import swapsi.model.Post.Posts;
+import swapsi.model.User.Users;
 import swapsi.model.dao.SwapsiMongoDBConnector;
 
 /**
@@ -17,13 +17,13 @@ import swapsi.model.dao.SwapsiMongoDBConnector;
 public class ConnServlet extends HttpServlet {
 
     private SwapsiMongoDBConnector connector;
-    private Posts posts;
+    private Users users;
     
     
     @Override
     public void init() throws ServletException {
         super.init(); //To change body of generated methods, choose Tools | Templates.
-        posts = new Posts();
+        users = new Users();
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -42,7 +42,7 @@ public class ConnServlet extends HttpServlet {
          response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
 
-        session.setAttribute("posts", posts);
+        session.setAttribute("users", users);
     }
 
     /**
