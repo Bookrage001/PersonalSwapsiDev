@@ -47,6 +47,15 @@ public class SwapsiMongoDBConnector {
     }
     
     /**
+     * Removes a single item from the collection
+     * @param document
+     */
+    public void remove(Document document) {
+        MongoCollection<Document> collection = collection();
+        collection.deleteOne(document);
+    }
+    
+    /**
      * Retrieves data to the database
      */
     public void retrieve(String USER_ID){

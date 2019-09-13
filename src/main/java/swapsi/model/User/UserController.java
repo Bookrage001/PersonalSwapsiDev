@@ -40,25 +40,15 @@ public class UserController {
                 .append("PASSWORD", newUser.getPASSWORD())
                 .append("DOB", newUser.getDOB())
                 .append("LOCATION", newUser.getLOCATION());
-//        
-//        Post newPost = new Post(POST_ID, POST_TEXT, POST_COMMENT_NUM, POST_LIKE_NUM,  POST_PRIVACY, USER_ID);
-//        posts.addPost(newPost);
-//        
-//        Document post = new Document("POST_ID", newPost.getPOST_ID())
-//                            .append("USER_ID", newPost.getUSER_ID());
-//        
-//        Document postDesc = new Document("Text", newPost.getPOST_TEXT())
-//                            .append("Privacy", newPost.getPOST_PRIVACY());
-//        
-//        Document postRes = new Document("Comment num", newPost.getPOST_COMMENT_NUM())
-//                            .append("Like num", newPost.getPOST_LIKE_NUM());
-//        
-//        post.put("Details", postDesc);
-//        post.put("Response", postRes);
-//        
-//    
+      
         data.add(user);
         connection.add(user);
 
+    }
+    
+    //Method that deletes Users from the database
+    
+    public void deleteUser(String ID){
+        //data.remove();
     }
 }
