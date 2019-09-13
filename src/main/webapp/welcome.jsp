@@ -30,6 +30,7 @@
         UserController users = new UserController();
         users.addUser(id, username, firstName, lastName, email, password, DOB, location);
         
+        
         //new Logic
 //        User user = new User(id, username, firstName, lastName, email, password, DOB, location);
 //        session.setAttribute("user", user);
