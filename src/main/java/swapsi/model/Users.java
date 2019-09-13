@@ -50,6 +50,7 @@ public class Users implements Serializable{
         return matches;
     }
 
+    /**new logic**/
     public void deleteUser(String email) {
         User user = getUser(email);
         if (user != null) {
@@ -57,5 +58,14 @@ public class Users implements Serializable{
         } else {
             System.out.println("User Doesn't exist!");
         }
+    }
+    
+    public User getUserID(String userID){
+        for(User user : list){
+            if(user.getId().equalsIgnoreCase(userID)){
+                return user;
+            }
+        }
+        return null;
     }
 }

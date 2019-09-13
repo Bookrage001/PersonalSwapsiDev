@@ -25,18 +25,19 @@
         String password = request.getParameter("password");
         String DOB = request.getParameter("DOB");
         String location = request.getParameter("location");
-
+        
+        //new Logic
         User user = new User(id, username, firstName, lastName, email, password, DOB, location);
         session.setAttribute("user", user);
 
-        String adminemail = (String) session.getAttribute("adminemail");
-        String adminpass = (String) session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-        if (connector != null) {
-            connector.add(user);
-        } else {
-            out.print("Cannot add user");
-        }
+//        String adminemail = (String) session.getAttribute("adminemail");
+//        String adminpass = (String) session.getAttribute("adminpassword");
+//        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+//        if (connector != null) {
+//            connector.add(user);
+//        } else {
+//            out.print("Cannot add user");
+//        }
 
     %>
 
