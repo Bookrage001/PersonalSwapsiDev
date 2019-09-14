@@ -50,8 +50,9 @@ public class SwapsiMongoDBConnector {
      * Removes a single item from the collection
      * @param document
      */
-    public void remove(Document document) {
+    public void delete(Document document) {
         MongoCollection<Document> collection = collection();
+        System.out.println(JSON.serialize(document));
         collection.deleteOne(document);
     }
     

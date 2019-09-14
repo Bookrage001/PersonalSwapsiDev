@@ -46,9 +46,15 @@ public class UserController {
 
     }
     
-    //Method that deletes Users from the database
+    /**
+     * Method that deletes Users from the database
+     * @param USERNAME
+     */
     
-    public void deleteUser(String ID){
-        //data.remove();
+    public void deleteUser(String USERNAME){
+        
+        Document remove = new Document ("USERNAME", USERNAME);
+        connection.delete(remove);
+        
     }
 }

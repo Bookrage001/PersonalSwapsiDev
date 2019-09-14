@@ -19,9 +19,10 @@
     </head>
     
     <%        
-        UserController users = new UserController();
-        users.removeUser();
+        String username = request.getParameter("username");
         
+        UserController users = new UserController();
+        users.deleteUser(username);  
 
     %>
 
