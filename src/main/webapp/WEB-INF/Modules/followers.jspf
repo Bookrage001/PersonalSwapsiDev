@@ -1,16 +1,14 @@
 <%@page import="swapsi.model.follower.*" %>
 
 <%
-    FollowerController followerController = new FollowerController();
-%>
-<%
-//    if (username != null) {
-//        Follower follower;
+    if (username != null) {
+        FollowerController followerController = new FollowerController(username);
+//        Follower follower = followerController.getFollower();
 //        if ( session.getAttribute("followers") != null) {
 //            followers = (Followers) session.getAttribute("followers");
 //        } else if (followers == null) {
 //            followers = new Followers(username);
-//        }
+        }
 %>
     <form action="addFollowerAction.jsp" method="Post">
         <input type="hidden" name="myUserName"  value="<%=username%>">
@@ -19,7 +17,7 @@
         <button>Add</button>
     </form>
 <%--    <%--%>
-<%--        for (String user: followers.getList() ) {--%>
+<%--        for (String user: follower.getFollowers_id() ) {--%>
 <%--    %>--%>
 <%--        <%=user%>--%>
 <%--    <%--%>

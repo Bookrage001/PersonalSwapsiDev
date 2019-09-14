@@ -96,6 +96,11 @@ public class FollowerController {
         Document query = new Document("user_Id", user_Id);
         return this.parseFollower(connection.get(query));
     }
+    public Follower getFollower() {
+        System.out.println("Getting Follower");
+        Document query = new Document("user_Id", this.user);
+        return this.parseFollower(connection.get(query));
+    }
 
     /**
      * Converts follower to a doc
@@ -114,11 +119,16 @@ public class FollowerController {
     private Follower parseFollower(BasicDBObject doc) {
         System.out.println("parseFollower");
         Map<String, Map> data = doc.toMap();
-        Follower follower = new Follower((String)data.get("0").get("user_Id"));
-        ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
-        for (String user: users
-        ) {
-            follower.addFollower(user);
+        if (!data.isEmpty()) {
+            System.out.println((String) data.get("0").get("user_Id"));
+            Follower follower = new Follower((String)data.get("0").get("user_Id"));
+            ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
+            for (String user: users
+            ) {
+                follower.addFollower(user);
+            }
+        } else {
+            Follower follower = new Follower();
         }
         return follower;
 
