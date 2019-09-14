@@ -4,8 +4,8 @@
     Author     : Hayley
 --%>
 
+<%@page import="swapsi.model.User.*"%>
 <%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
-<%@page import="swapsi.model.User.UserController"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -32,6 +32,8 @@
         String DOB = request.getParameter("DOB");
         String location = request.getParameter("location");
 
+        User user = new User(id, username, firstName, lastName, email, password, DOB, location);
+        session.setAttribute("UserLogin", user);
         UserController users = new UserController();
         users.addUser(id, username, firstName, lastName, email, password, DOB, location);
     %>
