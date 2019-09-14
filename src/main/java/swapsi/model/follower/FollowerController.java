@@ -24,12 +24,16 @@ public class FollowerController {
     private Followers followers = new Followers();
     private String collectionName = "Followers";
     private mLabMongoDbConnector connection;
+    private String user;
 
     /**
      * Initiates the DB connection.
      */
     public FollowerController() {
         connection = new mLabMongoDbConnector(this.collectionName);
+    } public FollowerController( String user) {
+        connection = new mLabMongoDbConnector(this.collectionName);
+        this.user = user;
     }
 
     /**
@@ -37,19 +41,27 @@ public class FollowerController {
      * @param user_Id
      * @param follower_Id
      */
-    public void addFollower(String user_Id, String follower_Id) {
+    public void addFollower(String follower_Id) {
         System.out.println("Adding Follower");
-        Follower couple = new Follower(user_Id, follower_Id);
-        followers.addUser(couple);
-        // If the user exists already add the follower to an existing follower
-         Follower existing  = getFollower(user_Id);
-        if (existing  != null) {
-            System.out.println("There is an existing follower Add new follower");
-            updateFollower(existing, follower_Id);
+        /**
+         * Security check
+         * Make sure that it is this user that is adding followers
+         */
+        if(this.user != null) {
+            Follower couple = new Follower(this.user, follower_Id);
+            followers.addUser(couple);
+            // If the user exists already add the follower to an existing follower
+            Follower existing  = getFollower(this.user);
+            if (existing  != null) {
+                System.out.println("There is an existing follower Add new follower");
+                updateFollower(existing, follower_Id);
+            } else {
+                System.out.println("There is no existing follower Create one");
+                // If the user does not have a followers list then create it
+                createFollower(couple);
+            }
         } else {
-            System.out.println("There is no existing follower Create one");
-            // If the user does not have a followers list then create it
-            createFollower(couple);
+            return;
         }
 
     }
