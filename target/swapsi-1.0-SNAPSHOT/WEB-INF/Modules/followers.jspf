@@ -1,13 +1,38 @@
 <%@page import="swapsi.model.follower.*" %>
 
 <%
-    Followers followers = (Followers) session.getAttribute("followers");
+    if (username != "") {
+            FollowerController controller = new FollowerController(username);
+        Follower follower = controller.getFollower();
+//        if ( session.getAttribute("followers") != null) {
+//            followers = (Followers) session.getAttribute("followers");
+//        } else if (followers == null) {
+//            followers = new Followers(username);
+//        }
+%>
+    <form action="${pageContext.request.contextPath}/action/addFollower.jsp" method="Post">
+        <label>Follow "<"Username">" </label>
+        <input type="text" name="TheirUserName" placeholder="Username">
+        <button>Add</button>
+    </form>
+<table>
+    <thead>
+    <td>
+        Users you follow
+    </td>
+    </thead>
+    <%
+        for (String user: follower.getFolowers() ) {
+    %>
+    <td>
+        <%=user%>
+    </td>
+</table>
+<%
+    }
 %>
 
-<form action="addFollowerAction.jsp" method="Post">
-    <label>MYUserName</label>
-    <input type="text" name="myUserName" value="Username">
-    <label>Follow "<"Username">" </label>
-    <input type="text" name="TheirUserName" value="Username">
-    <button>Add</button>
-</form>
+
+<%
+    }
+%>

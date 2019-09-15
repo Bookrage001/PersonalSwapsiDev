@@ -1,4 +1,3 @@
-
 package swapsi.model.follower;
 
 import java.io.Serializable;
@@ -9,7 +8,6 @@ public class Followers implements Serializable {
     // add follower
 //        Add user to follower list
     // remove follower
-
     private ArrayList<Follower> list = new ArrayList<>();
 
     public Followers() {

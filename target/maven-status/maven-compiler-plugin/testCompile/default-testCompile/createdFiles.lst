@@ -1,0 +1,3 @@
+swapsi\model\follower\FollowersTest.class
+swapsi\model\dao\mLabMongoDbConnectorTest.class
+swapsi\model\follower\FollowerControllerTest.class
