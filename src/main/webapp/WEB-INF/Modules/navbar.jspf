@@ -8,7 +8,7 @@
 <%
     String username = "";
     User user;
-    if (session.getAttribute("user") != null) {
+    if (session.getAttribute("UserLogin") != null) {
             if (username == "") {
                 user = (User) session.getAttribute("UserLogin");
                 username = user.getUSERNAME();

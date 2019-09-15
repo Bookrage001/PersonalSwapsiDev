@@ -30,7 +30,7 @@
 
         user = new User();
         user.setUSERNAME(username);
-        session.setAttribute("user", user);
+        session.setAttribute("UserLogin", user);
     %>
     <p class="centered">
     <%=username%>
