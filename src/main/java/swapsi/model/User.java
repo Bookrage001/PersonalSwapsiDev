@@ -5,21 +5,21 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     public String name;
-    private int id;
+    private String id;
     private String username;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String DOB;
-    private String Location;
+    private String location;
 
     public User() {
 
     }
 
-    public User(int id, String username, String firstName, String lastName, String email, String password, String DOB,
-            String Location) {
+    public User(String id, String username, String firstName, String lastName, String email, String password, String DOB,
+            String location) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -58,11 +58,11 @@ public class User implements Serializable {
     }
 
     public String getLocation() {
-        return this.Location;
+        return this.location;
     }
 
-    public void setLocation(String Location) {
-        this.Location = Location;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getEmail() {
@@ -81,11 +81,11 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public int getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
