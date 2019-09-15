@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="swapsi.model.dao.mLabMongoDbConnectorTest" time="0.082" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="swapsi.model.dao.mLabMongoDbConnectorTest" time="0.088" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\jre\bin"/>
@@ -29,7 +29,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Users\caleb\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Users\caleb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\caleb\AppData\Local\atom\bin;C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\Users\caleb\AppData\Local\GitHubDesktop\bin;C:\Users\caleb\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Users\caleb\AppData\Roaming\npm;C:\Users\caleb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\caleb\AppData\Local\atom\bin;C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\Users\caleb\AppData\Local\GitHubDesktop\bin;C:\Users\caleb\AppData\Roaming\nvm;C:\Program Files\nodejs;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Users\caleb\AppData\Roaming\npm;C:\Program Files\PuTTY\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\Users\caleb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\caleb\AppData\Local\atom\bin;C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\Users\caleb\AppData\Local\GitHubDesktop\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Users\caleb\AppData\Roaming\npm;C:\Users\caleb\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\caleb\AppData\Local\atom\bin;C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\bin;C:\Users\caleb\AppData\Local\GitHubDesktop\bin;C:\Users\caleb\AppData\Roaming\nvm;C:\Program Files\nodejs;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,7 +62,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="swapsi.model.dao.mLabMongoDbConnectorTest" name="collection" time="0.006"/>
-  <testcase classname="swapsi.model.dao.mLabMongoDbConnectorTest" name="testToString" time="0.001"/>
+  <testcase classname="swapsi.model.dao.mLabMongoDbConnectorTest" name="testToString" time="0"/>
   <testcase classname="swapsi.model.dao.mLabMongoDbConnectorTest" name="add" time="0"/>
   <testcase classname="swapsi.model.dao.mLabMongoDbConnectorTest" name="get" time="0"/>
 </testsuite>
