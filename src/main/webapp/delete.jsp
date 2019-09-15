@@ -16,17 +16,18 @@
         <title>Account Details</title>
     </head>
     
-    <%        
+  
+
+    <body>
+        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
+        
+          <%        
         User user = (User)session.getAttribute("UserLogin");
         
         UserController users = new UserController();
         users.deleteUser(user.getUSERNAME());  
 
     %>
-
-    <body>
-        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
-        
         <div align="center">
         <p>It's sad to see you go! Your account has been successfully deleted.<p>
         <p><a href="index.jsp">Return to the Main Page</a></p>
