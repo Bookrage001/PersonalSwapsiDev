@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4291cff-f081-4844-9b59-675410d264b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/bson-3.4.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/mongodb-driver-3.4.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/mongodb-driver-core-3.4.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin" beforeDir="false" afterPath="$PROJECT_DIR$/bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.dao.mLabMongoDbConnectorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.dao.mLabMongoDbConnectorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowerControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowerControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowersTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.dao.mLabMongoDbConnectorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.dao.mLabMongoDbConnectorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowerControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowerControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/glassfish-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/glassfish-web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/bson-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/mongodb-driver-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/lib/mongodb-driver-core-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/gfv3ee6.dpf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568519657630</updated>
       <workItem from="1568519661573" duration="4007000" />
-      <workItem from="1568538772056" duration="14286000" />
+      <workItem from="1568538772056" duration="15076000" />
     </task>
     <servers />
   </component>
