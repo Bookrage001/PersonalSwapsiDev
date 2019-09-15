@@ -21,9 +21,11 @@ public class mLabMongoDbConnector {
     private String url;
 
     public mLabMongoDbConnector(String collectionName) {
-        this.owner = System.getenv("ADMINEMAIL");
+        // this.owner = System.getenv("ADMINEMAIL");
         System.out.println(System.getenv("ADMINEMAIL"));
-        this.password = System.getenv("ADMINPASSWORD");
+        // this.password = System.getenv("ADMINPASSWORD");
+        this.owner = "swapsiAdmin";
+        this.password = "TJVv58JmWmdPTX5jaM5T5RwXyp7n7xQAd8U2wGt";
         this.collectionName = collectionName;
         url = "mongodb://" + this.owner + ":" + this.password + "@" + this.dbUrl;
     }
