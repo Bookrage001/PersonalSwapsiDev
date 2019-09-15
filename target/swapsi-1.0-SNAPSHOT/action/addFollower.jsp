@@ -16,12 +16,11 @@
         FollowerController followerController = new FollowerController(username);
         String followerUsername = request.getParameter("TheirUserName");
         followerController.addFollower(followerUsername);
-    //    String userId = user.getId();
     %>
 <%--do some data validation here in the future--%>
-<center>
-    <%=followerUsername%> Has been added to <%=username%>
-</center>
+    <center>
+        <%=username%> is now following: <%=followerUsername%>
+    </center>
 <%@include file="../WEB-INF/Modules/footer.jspf" %>
 
 </body>

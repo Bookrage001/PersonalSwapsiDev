@@ -23,7 +23,7 @@
         <a href="#">Projects</a>
         <span>|</span>
         <%
-            if (username == "") {
+            if (username == "" || username == null) {
         %>
         <a href="register.jsp">Register</a>
         <span>|</span>
@@ -31,7 +31,7 @@
         <%
             } else {
         %>
-        <a href="login.jsp"><i class="fa fa-user" aria-hidden="true"></i> <%=username%></a>
+        <a href="${pageContext.request.contextPath}/login.jsp"><i class="fa fa-user" aria-hidden="true"></i> <%=username%></a>
         <%
             }
         %>
