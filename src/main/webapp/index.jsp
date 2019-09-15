@@ -10,7 +10,7 @@
     <title>Home Page</title>
   </head>
   <body>
-      <%@include file="./WEB-INF/Modules/navbar.jspf"%>      
+      <%@include file="./WEB-INF/Modules/navbar.jspf"%>
       <h1 align="center">Hello World!</h1>
 
       <%@include file="./WEB-INF/Modules/footer.jspf" %>

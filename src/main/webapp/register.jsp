@@ -25,7 +25,7 @@
     %>
 
     <body>
-        <%@include file="./WEB-INF/Modules/navbar.jspf"%>
+        <%@include file="WEB-INF/Modules/navbar.jspf"%>
         <div>
             <form action="welcome.jsp" method="POST">
                 <h1>Registration</h1>
