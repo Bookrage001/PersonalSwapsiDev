@@ -17,7 +17,7 @@
     </head>
     
     <%        
-        user = (User)session.getAttribute("UserLogin");
+        User user = (User)session.getAttribute("UserLogin");
         
         UserController users = new UserController();
         users.deleteUser(user.getUSERNAME());  
