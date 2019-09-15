@@ -2,9 +2,6 @@ swapsi\model\follower\Followers.class
 swapsi\model\follower\Follower.class
 swapsi\model\Post.class
 swapsi\model\follower\FollowerController.class
-swapsi\model\dao\MongoDBConnector2$project.class
-swapsi\model\Post.class
-swapsi\model\dao\MongoDBConnector2.class
 swapsi\model\Project.class
 swapsi\model\Projects.class
 swapsi\controller\ConnServlet.class
@@ -12,10 +9,4 @@ swapsi\model\Users.class
 swapsi\model\dao\mLabMongoDbConnector.class
 swapsi\model\Showcase.class
 swapsi\model\User.class
-swapsi\model\User.class
-swapsi\model\dao\MongoDBConnector2$Showcases.class
-swapsi\model\dao\MongoDBConnector.class
-swapsi\model\Projects.class
-swapsi\model\dao\FollowerMongoDb.class
-swapsi\model\Showcase.class
 swapsi\model\Posts.class

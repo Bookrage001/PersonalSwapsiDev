@@ -16,7 +16,7 @@
     <div style="margin-top:10%">
 
         <h1>Enter your details to login: <span class="error"><c:if test="${existErr!=null}"><span class="error"><c:out value="${existErr}"/></span></c:if></span></h1>
-        <form method="post" action="loginAction.jsp">
+        <form method="post" action="./action/login.jsp">
 
             <tr>
                 <td><label>Username</label></td>

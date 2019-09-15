@@ -2,7 +2,7 @@
 
 <%
     if (username != "") {
-        Follower follower = followerController.getFollower();
+//        Follower follower = followerController.getFollower();
 //        if ( session.getAttribute("followers") != null) {
 //            followers = (Followers) session.getAttribute("followers");
 //        } else if (followers == null) {
