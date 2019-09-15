@@ -50,20 +50,10 @@ public class SwapsiMongoDBConnector {
      * Removes a single item from the collection
      * @param document
      */
-    public void delete(Document document) {
-        MongoCollection<Document> collection = collection();
-        System.out.println(JSON.serialize(document));
-        collection.deleteOne(document);
-    }
-    
-    /**
-     * Retrieves data to the database
-     */
-    public void retrieve(String USER_ID){
-        MongoCollection<Document> collection = collection();
-        //System.out.println(JSON.serialize(document));
-        collection.find(new BasicDBObject("USER_ID", USER_ID));
-    }  
+    public void delete(Document document){
+         MongoCollection<Document> collection = collection();
+         collection.deleteOne(document);
+     }
     
     /**
      * gets items from the collection depending on the provided parameters

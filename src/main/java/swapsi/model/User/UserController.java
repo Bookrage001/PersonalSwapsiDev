@@ -51,10 +51,8 @@ public class UserController {
      * @param USERNAME
      */
     
-    public void deleteUser(String USERNAME){
-        
+    public void deleteUser(String USERNAME){        
         Document remove = new Document ("USERNAME", USERNAME);
-        connection.delete(remove);
-        
+        connection.delete(remove);        
     }
 }

@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
-<%@page import="swapsi.model.User.UserController"%>
+<%@page import="swapsi.model.User.*"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -19,10 +19,10 @@
     </head>
     
     <%        
-        String username = request.getParameter("username");
+        User user = (User)session.getAttribute("UserLogin");
         
         UserController users = new UserController();
-        users.deleteUser(username);  
+        users.deleteUser(user.getUSERNAME());  
 
     %>
 
