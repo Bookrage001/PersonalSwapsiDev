@@ -18,6 +18,7 @@
         followerController.addFollower(followerUsername);
     //    String userId = user.getId();
     %>
+<%--do some data validation here in the future--%>
 <center>
     <%=followerUsername%> Has been added to <%=username%>
 </center>

@@ -10,7 +10,7 @@
     <title>Added Follower</title>
 </head>
 <body>
-<%@include file="./WEB-INF/Modules/navbar.jspf"%>
+<%@include file="../WEB-INF/Modules/navbar.jspf"%>
 
     <%
         FollowerController followerController = new FollowerController(username);
@@ -18,10 +18,11 @@
         followerController.addFollower(followerUsername);
     //    String userId = user.getId();
     %>
+<%--do some data validation here in the future--%>
 <center>
     <%=followerUsername%> Has been added to <%=username%>
 </center>
-<%@include file="./WEB-INF/Modules/footer.jspf" %>
+<%@include file="../WEB-INF/Modules/footer.jspf" %>
 
 </body>
 </html>
