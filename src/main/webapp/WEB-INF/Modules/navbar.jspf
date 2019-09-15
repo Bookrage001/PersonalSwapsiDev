@@ -7,9 +7,10 @@
 
 <%
     String username = "";
+    User user;
     if (session.getAttribute("user") != null) {
             if (username == "") {
-                User user = (User) session.getAttribute("user");
+                user = (User) session.getAttribute("user");
                 username = user.getUSERNAME();
             }
             FollowerController followerController = new FollowerController(username);
