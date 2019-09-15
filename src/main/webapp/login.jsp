@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 
 
-<link href="./maincss.css" rel="stylesheet" type="text/css"/>
+<link href="maincss.css" rel="stylesheet" type="text/css"/>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -38,6 +38,9 @@
         </tr>
         <tr>
             <td><input class="button" type="submit" value="Login" style="margin-top:20px"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="submit" value="Logout" style="margin-top:20px"></td>
         </tr>
     </form>
 
