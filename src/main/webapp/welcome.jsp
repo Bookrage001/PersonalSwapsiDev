@@ -6,7 +6,7 @@
 
 <%@page import="swapsi.model.User.User"%>
 <%@page import="swapsi.model.User.*"%>
-<%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
+<%--<%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>--%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
@@ -18,14 +18,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Welcome Page</title>
     </head>
-
+    <body>
+        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
 
     <%
         //User input from register form is stored into database through connection
 
         int key = (new Random()).nextInt(999999);
         String id = "" + key;
-        String username = request.getParameter("username");
+        username = request.getParameter("username");
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
@@ -35,12 +36,11 @@
 
         User user = new User(id, username, firstName, lastName, email, password, DOB, location);
         session.setAttribute("UserLogin", user);
-        UserController users = new UserController();
-        users.addUser(id, username, firstName, lastName, email, password, DOB, location);
+//        UserController users = new UserController();
+//        users.addUser(id, username, firstName, lastName, email, password, DOB, location);
     %>
 
-    <body>        
-        <%@include file="./WEB-INF/Modules/navbar.jspf" %>
+
 
         <div align="center">
 

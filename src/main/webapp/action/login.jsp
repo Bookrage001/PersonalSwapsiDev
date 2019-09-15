@@ -29,7 +29,7 @@
 //        String location = request.getParameter("location");
 
         User user = new User();
-        user.setUsername(username);
+        user.setUSERNAME(username);
         session.setAttribute("user", user);
     %>
     <p class="centered">

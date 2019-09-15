@@ -7,7 +7,7 @@ package swapsi.model.User;
 
 import java.util.*;
 import org.bson.Document;
-import swapsi.model.dao.SwapsiMongoDBConnector;
+import swapsi.model.dao.mLabMongoDbConnector;
 
 /**
  *
@@ -18,10 +18,10 @@ public class UserController {
     private List<Document> data = new ArrayList<Document>();
     private Users users = new Users();
     private String collectionName = "USERS";
-    private SwapsiMongoDBConnector connection;
+    private mLabMongoDbConnector connection;
 
     public UserController() {
-        connection = new SwapsiMongoDBConnector(this.collectionName);
+        connection = new mLabMongoDbConnector(this.collectionName);
     }
 
     /**

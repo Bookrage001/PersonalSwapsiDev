@@ -1,7 +1,6 @@
 <%--
   User: caleb ardern
 --%>
-<%@page import="swapsi.model.User"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page import="swapsi.model.follower.*" %>
 
