@@ -22,10 +22,10 @@
     </td>
     </thead>
     <%
-        for (String user: follower.getFolowers() ) {
+        for (String userItm: follower.getFolowers() ) {
     %>
     <td>
-        <%=user%>
+        <%=userItm%>
     </td>
 </table>
 <%
