@@ -4,11 +4,8 @@
     Author     : Hayley
 --%>
 
-<<<<<<< HEAD
 <%@page import="swapsi.model.User.User"%>
-=======
 <%@page import="swapsi.model.User.*"%>
->>>>>>> 0bda452e583237a46b9856cea9c51ad7098ee2f2
 <%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 
@@ -52,13 +49,13 @@
             <h3>Welcome to Swapsi! </h3>        
             <h4>Your username is: <%=username%></h4>
             <h4>Your email is: <%=email%></h4>
-            <p>Click <a href="account.jsp">here</a> to delete your account.</p>
             <p>Click <a href="index.jsp">here</a> to view your dashboard!</p>         
 
         </div>
 
-        <h6>Click <a href="logout.jsp">here</a> to logout.</h6>
-
+        <p>Click <a href="logout.jsp">here</a> to logout.</p>
+        <h6>Click <a href="delete.jsp">here</a> to delete your account.</h6>
+        
         <%@include file="./WEB-INF/Modules/footer.jspf" %>        
     </body>
 

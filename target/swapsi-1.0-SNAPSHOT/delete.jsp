@@ -29,7 +29,10 @@
     <body>
         <%@include file="./WEB-INF/Modules/navbar.jspf" %>
         
-        It's sad to see you go! Your account has been successfully deleted.
+        <div align="center">
+        <p>It's sad to see you go! Your account has been successfully deleted.<p>
+        <p><a href="index.jsp">Return to the Main Page</a></p>
+        </div>
         
         <%@include file="./WEB-INF/Modules/footer.jspf" %>
 

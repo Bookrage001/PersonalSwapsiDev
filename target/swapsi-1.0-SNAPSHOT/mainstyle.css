@@ -33,7 +33,7 @@ h1 {
     background-color: #CD6959;
     display: flex;
     padding: 16px;
-    }
+}
 
 .w-nav-right {
     float: right;
@@ -52,7 +52,7 @@ h1 {
 .w-nav a.active {
     color: #FCBC7C;
 }
-    
+
 .w-nav a:hover:not(.active) {
     background-color: #9B5C4E;
 }
@@ -118,7 +118,7 @@ form::after {
 /**********Search Bar Style************/
 
 .w-nav .search-container {
-    
+
 }
 
 .w-nav input[type=text] {
@@ -157,4 +157,5 @@ form::after {
     .w-nav input[type=text] {
         border: 1px solid #ccc;  
     }
+
 }
