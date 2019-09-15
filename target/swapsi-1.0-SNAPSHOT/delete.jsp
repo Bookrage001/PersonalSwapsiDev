@@ -22,7 +22,7 @@
         <%@include file="./WEB-INF/Modules/navbar.jspf" %>
         
           <%        
-        User user = (User)session.getAttribute("UserLogin");
+        user = (User)session.getAttribute("UserLogin");
         
         UserController users = new UserController();
         users.deleteUser(user.getUSERNAME());  
