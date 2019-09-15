@@ -48,7 +48,7 @@
             <h3>Welcome to Swapsi! </h3>        
             <h4>Your username is: <%=username%></h4>
             <h4>Your email is: <%=email%></h4>
-            <p>Click <a href="account.jsp">here</a> to view your account details.</p>
+            <p>Click <a href="account.jsp">here</a> to delete your account.</p>
             <p>Click <a href="index.jsp">here</a> to view your dashboard!</p>         
 
         </div>
