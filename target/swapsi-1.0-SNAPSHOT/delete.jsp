@@ -3,8 +3,6 @@
     Created on : 13/09/2019, 8:10:44 PM
     Author     : Hayley
 --%>
-
-<%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>
 <%@page import="swapsi.model.User.*"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 

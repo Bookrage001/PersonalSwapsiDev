@@ -6,7 +6,6 @@
 
 <%@page import="swapsi.model.User.User"%>
 <%@page import="swapsi.model.User.*"%>
-<%--<%@page import="swapsi.model.dao.SwapsiMongoDBConnector"%>--%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
