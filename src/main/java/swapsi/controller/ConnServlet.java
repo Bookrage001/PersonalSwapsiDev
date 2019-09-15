@@ -9,22 +9,24 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import swapsi.model.User.Users;
 import swapsi.model.dao.SwapsiMongoDBConnector;
+import swapsi.model.dao.mLabMongoDbConnector;
 
 /**
  *
- * @author mcant
+ * @author mcant and Caleb Ardern
  */
 public class ConnServlet extends HttpServlet {
 
-    private SwapsiMongoDBConnector connector;
+    // private SwapsiMongoDBConnector connector;
+    private mLabMongoDbConnector connector;
     private Users users;
+    private Followers followers;
     
     
     @Override
     public void init() throws ServletException {
         super.init(); //To change body of generated methods, choose Tools | Templates.
         users = new Users();
-    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -56,7 +58,8 @@ public class ConnServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         response.setContentType("text/html;charset=UTF-8");
+
+        response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";
 
