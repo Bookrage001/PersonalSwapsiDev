@@ -33,7 +33,7 @@
         String DOB = request.getParameter("DOB");
         String location = request.getParameter("location");
 
-        User user = new User(id, username, firstName, lastName, email, password, DOB, location);
+        user = new User(id, username, firstName, lastName, email, password, DOB, location);
         session.setAttribute("UserLogin", user);
 //        UserController users = new UserController();
 //        users.addUser(id, username, firstName, lastName, email, password, DOB, location);

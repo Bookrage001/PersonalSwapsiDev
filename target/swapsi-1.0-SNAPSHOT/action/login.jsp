@@ -28,7 +28,7 @@
 //        String DOB = request.getParameter("DOB");
 //        String location = request.getParameter("location");
 
-        User user = new User();
+        user = new User();
         user.setUSERNAME(username);
         session.setAttribute("user", user);
     %>
