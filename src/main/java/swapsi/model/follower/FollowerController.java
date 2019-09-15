@@ -47,12 +47,14 @@ public class FollowerController {
          * Security check
          * Make sure that it is this user that is adding followers
          */
-        if(this.user != null) {
+        if (this.user != "") {
             Follower couple = new Follower(this.user, follower_Id);
             followers.addUser(couple);
             // If the user exists already add the follower to an existing follower
-            Follower existing  = getFollower(this.user);
-            if (existing  != null) {
+            Follower existing = getFollower(this.user);
+            System.out.println("Existing");
+            System.out.println(existing.getuser_id());
+            if (existing.getuser_id() != null) {
                 System.out.println("There is an existing follower Add new follower");
                 updateFollower(existing, follower_Id);
             } else {
@@ -119,16 +121,15 @@ public class FollowerController {
     private Follower parseFollower(BasicDBObject doc) {
         System.out.println("parseFollower");
         Map<String, Map> data = doc.toMap();
+        Follower follower = new Follower(doc.getString(user));
         if (!data.isEmpty()) {
             System.out.println((String) data.get("0").get("user_Id"));
-            Follower follower = new Follower((String)data.get("0").get("user_Id"));
+            follower = new Follower((String) data.get("0").get("user_Id"));
             ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
             for (String user: users
             ) {
                 follower.addFollower(user);
             }
-        } else {
-            Follower follower = new Follower();
         }
         return follower;
 

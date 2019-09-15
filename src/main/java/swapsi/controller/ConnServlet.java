@@ -25,7 +25,7 @@ public class ConnServlet extends HttpServlet {
 
     @Override // Create and instance of DBConnector for the deployment session
     public void init() {
-        followers = new Followers();
+//        followers = new Followers();
     }
 
     @Override // Add the classes instances to the session

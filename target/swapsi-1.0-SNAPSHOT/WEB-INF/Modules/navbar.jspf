@@ -1,19 +1,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <%@page import="swapsi.model.*" %>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="mainstyle.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
 
 <%
     String username = "";
-//    if (session.getAttribute("user") != null) {
-//        User user = (User) session.getAttribute("user");
-//        username = user.getUsername();
-//    }
+    if (session.getAttribute("user") != null) {
+        User user = (User) session.getAttribute("user");
+        username = user.getUsername();
+    }
 %>
 
 <div class="w-nav">
     <div class="w-nav-left">
-        <a href="${pageContext.request.contextPath}/index.jsp"><img src="/images/logo_swapsi.png" alt="Logo" align="center"></a>
+        <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo_swapsi.png" alt="Logo" align="center"></a>
     </div>
 <!--    <div class="search-container">
         <form action="./WEB-INF/search.jsp">
@@ -27,7 +27,7 @@
         <a href="#">Projects</a>
         <span>|</span>
         <%
-            if (username == null) {
+            if (username == "") {
         %>
         <a href="register.jsp">Register</a>
         <span>|</span>
@@ -35,7 +35,7 @@
         <%
             } else {
         %>
-        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <%=username%></a>
+        <a href="login.jsp"><i class="fa fa-user" aria-hidden="true"></i> <%=username%></a>
         <%
             }
         %>

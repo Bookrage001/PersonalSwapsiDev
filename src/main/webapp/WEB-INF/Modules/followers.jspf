@@ -2,16 +2,14 @@
 
 <%
     if (username != null) {
-        FollowerController followerController = new FollowerController(username);
 //        Follower follower = followerController.getFollower();
 //        if ( session.getAttribute("followers") != null) {
 //            followers = (Followers) session.getAttribute("followers");
 //        } else if (followers == null) {
 //            followers = new Followers(username);
-        }
+//        }
 %>
     <form action="addFollowerAction.jsp" method="Post">
-        <input type="hidden" name="myUserName"  value="<%=username%>">
         <label>Follow "<"Username">" </label>
         <input type="text" name="TheirUserName" placeholder="Username">
         <button>Add</button>
@@ -20,9 +18,9 @@
 <%--        for (String user: follower.getFollowers_id() ) {--%>
 <%--    %>--%>
 <%--        <%=user%>--%>
-<%--    <%--%>
-<%--        }--%>
-<%--    %>--%>
+<%
+    }
+%>
 
 
 

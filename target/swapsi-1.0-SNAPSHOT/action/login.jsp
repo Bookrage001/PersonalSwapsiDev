@@ -14,7 +14,7 @@
     <title>Login</title>
 </head>
 <body>
-    <%@include file=".././WEB-INF/Modules/navbar.jspf"%>
+    <%@include file="../WEB-INF/Modules/navbar.jspf"%>
     <h1 align="center">Welcome</h1>
     <%
 //        String username = request.getParameter("user_name");

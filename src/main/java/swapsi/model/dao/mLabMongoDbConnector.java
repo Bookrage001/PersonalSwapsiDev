@@ -25,20 +25,20 @@ public class mLabMongoDbConnector {
     private String dbUrl = "ds163517.mlab.com:63517" + "/" + this.dbName;
     protected String owner;
     protected String password;
-    protected String collection;
+    protected String collectionName;
     private String url;
 
-
-    public mLabMongoDbConnector(String collection) {
+    public mLabMongoDbConnector(String collectionName) {
         this.owner = System.getenv("ADMINEMAIL");
         System.out.println(System.getenv("ADMINEMAIL"));
         this.password = System.getenv("ADMINPASSWORD");
-        this.collection = collection;
+        this.collectionName = collectionName;
         url = "mongodb://" + this.owner + ":" + this.password + "@" + this.dbUrl;
     }
 
     /**
      * Initiate the conection to the db and returns the collection
+     * 
      * @return MongoDB Collection
      */
     public MongoCollection<Document> collection() {
@@ -46,22 +46,25 @@ public class mLabMongoDbConnector {
         System.out.println(this.toString());
         MongoClient mongoClient = new MongoClient(new MongoClientURI(url));
         MongoDatabase db = mongoClient.getDatabase(this.dbName);
-        MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
+        MongoCollection<Document> collectionDoc = db.getCollection(this.collectionName);
         return collectionDoc;
     }
 
     /**
      * Adds a single item to the collection.
+     * 
      * @param document
      */
     public void add(Document document) {
         MongoCollection<Document> collection = collection();
+        System.out.println("Adding following document to " + collectionName);
         System.out.println(JSON.serialize(document));
         collection.insertOne(document);
     }
 
     /**
      * gets items from the collection depending on the provided parameters
+     * 
      * @param query
      */
     public BasicDBObject get(Document query) {
@@ -73,7 +76,7 @@ public class mLabMongoDbConnector {
         try {
             while (cursor.hasNext()) {
                 Document doc = cursor.next();
-                retrunData.put( x + "" , doc);
+                retrunData.put(x + "", doc);
                 x++;
             }
         } finally {
@@ -81,6 +84,7 @@ public class mLabMongoDbConnector {
         }
         return retrunData;
     }
+
     public void update(Document search, Document replace) {
         MongoCollection<Document> collection = collection();
         collection.replaceOne(search, replace);
@@ -88,18 +92,18 @@ public class mLabMongoDbConnector {
 
     /**
      * Some useful information about how this class is running.
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String passwordstatus;
         if (this.password == null) {
             passwordstatus = "No password Provided";
         } else {
             passwordstatus = "Password Hidden";
         }
-        return "Owner: " + this.owner + " Password: " + passwordstatus
-                + " Collection: " + this.collection + "\n"
+        return "Owner: " + this.owner + " Password: " + passwordstatus + " Collection: " + this.collectionName + "\n"
                 + this.dbUrl;
     }
 

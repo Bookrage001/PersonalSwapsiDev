@@ -11,9 +11,9 @@ public class FollowerControllerTest {
 
     @Test
     public void addFollowers() {
-        FollowerController db = new FollowerController();
+        FollowerController db = new FollowerController("AnewUser");
         System.out.println("Created DB");
-        db.addFollower("AnewUser", "AnotherUser3");
+        db.addFollower("AnotherUser3");
     }
 
     @Test

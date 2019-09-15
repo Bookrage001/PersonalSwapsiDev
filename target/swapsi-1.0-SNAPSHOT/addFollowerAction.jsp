@@ -1,6 +1,7 @@
 <%--
   User: caleb ardern
 --%>
+<%@page import="swapsi.model.User"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page import="swapsi.model.follower.*" %>
 
@@ -9,13 +10,18 @@
     <title>Added Follower</title>
 </head>
 <body>
-    <%
-        String myUsername = request.getParameter("myUserName");
-        String followerUsername = request.getParameter("myUserName");
+<%@include file="./WEB-INF/Modules/navbar.jspf"%>
 
-        FollowerController followers = new FollowerController();
-        followers.addFollower(myUsername, followerUsername);
+    <%
+        FollowerController followerController = new FollowerController(username);
+        String followerUsername = request.getParameter("TheirUserName");
+        followerController.addFollower(followerUsername);
+    //    String userId = user.getId();
     %>
-Follower Has been added
+<center>
+    <%=followerUsername%> Has been added to <%=username%>
+</center>
+<%@include file="./WEB-INF/Modules/footer.jspf" %>
+
 </body>
 </html>
