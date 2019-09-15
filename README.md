@@ -1,11 +1,15 @@
 # Advance Software Development
+
 ## Features:
+
 > ###### Post Management
+>
 > ###### Post Restriction and Photo Management
 
 by Mark Galulu
 
 #### Post Management
+
 > user create post
 
 > user delete post
@@ -15,7 +19,8 @@ by Mark Galulu
 > user view post
 
 #### Post Restriction and Photo Management
->user can add post restrictions
+
+> user can add post restrictions
 
 > user can remove post restrictions
 
@@ -28,7 +33,9 @@ by Mark Galulu
 > user can delete photo from the post
 
 #### Database : MongoDB
-#### Environment: Maven
-#### Language: Java/JS
-#### Software: Netbeans
 
+#### Environment: Maven
+
+#### Language: Java/JS
+
+#### Software: Netbeans
