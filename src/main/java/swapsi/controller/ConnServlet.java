@@ -1,60 +1,76 @@
 package swapsi.controller;
 
-import swapsi.model.dao.mLabMongoDbConnector;
-import swapsi.model.follower.Followers;
-
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import swapsi.model.User.Users;
+import swapsi.model.dao.SwapsiMongoDBConnector;
 
 /**
  *
- * @author Caleb
+ * @author mcant
  */
 public class ConnServlet extends HttpServlet {
-    private mLabMongoDbConnector connector;
 
-    private Followers followers;
-
-
-    @Override // Create and instance of DBConnector for the deployment session
-    public void init() {
-        followers = new Followers();
+    private SwapsiMongoDBConnector connector;
+    private Users users;
+    
+    
+    @Override
+    public void init() throws ServletException {
+        super.init(); //To change body of generated methods, choose Tools | Templates.
+        users = new Users();
     }
 
-    @Override // Add the classes instances to the session
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        response.setContentType("text/html;charset=UTF-8");
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
 
-        session.setAttribute("followers", followers);
+        session.setAttribute("users", users);
     }
 
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Old boilerplate code
-
-//        String adminemail = System.getenv("ADMINEMAIL");
-//        String adminpass = System.getenv("ADMINPASSWORD");
-
-//        connector = new mLabMongoDbConnector();
-        response.setContentType("text/html;charset=UTF-8");
+         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";
-
-//        session.setAttribute("status", status);
-//        session.setAttribute("adminemail", adminemail);
-//        session.setAttribute("adminpassword", adminpass);
 
         RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
         rs.forward(request, response);
     }
 
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
 }
