@@ -9,6 +9,11 @@ Without this configuration present, some functionality in the IDE may be limited
     <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
         <word>SWAPSI</word>
     </spellchecker-wordlist>
+    <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+        <word>ArrayList</word>
+        <word>SWAPSI</word>
+    </spellchecker-wordlist>
+    <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
     <properties xmlns="http://www.netbeans.org/ns/maven-properties-data/1">
         <!--
 Properties that influence various parts of the IDE, especially code formatting and the like. 
@@ -19,9 +24,35 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>1.7-web</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_j2eeVersion>
         <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>gfv3ee6</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
         <org-netbeans-modules-projectapi.jsf_2e_language>Facelets</org-netbeans-modules-projectapi.jsf_2e_language>
+        <org-netbeans-modules-css-prep.less_2e_mappings>/less:/css</org-netbeans-modules-css-prep.less_2e_mappings>
+        <org-netbeans-modules-css-prep.less_2e_enabled>false</org-netbeans-modules-css-prep.less_2e_enabled>
+        <org-netbeans-modules-css-prep.sass_2e_enabled>false</org-netbeans-modules-css-prep.sass_2e_enabled>
+        <org-netbeans-modules-css-prep.sass_2e_compiler_2e_options/>
+        <org-netbeans-modules-css-prep.less_2e_compiler_2e_options/>
+        <org-netbeans-modules-css-prep.sass_2e_mappings>/scss:/css</org-netbeans-modules-css-prep.sass_2e_mappings>
+        <org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>js/libs</org-netbeans-modules-web-clientproject-api.js_2e_libs_2e_folder>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.SaveActionModifiedLinesOnly>false</de-markiewb-netbeans-plugins-eclipse-formatter44.SaveActionModifiedLinesOnly>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.preserveBreakPoints>true</de-markiewb-netbeans-plugins-eclipse-formatter44.preserveBreakPoints>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.linefeed/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.eclipseFormatterActiveProfile/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.useProjectPref>true</de-markiewb-netbeans-plugins-eclipse-formatter44.useProjectPref>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.eclipseFormatterLocation/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.showNotifications>true</de-markiewb-netbeans-plugins-eclipse-formatter44.showNotifications>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.eclipseFormatterEnabled>false</de-markiewb-netbeans-plugins-eclipse-formatter44.eclipseFormatterEnabled>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.enableFormatAsSaveAction>false</de-markiewb-netbeans-plugins-eclipse-formatter44.enableFormatAsSaveAction>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.sourcelevel/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter44.useProjectSettings>false</de-markiewb-netbeans-plugins-eclipse-formatter44.useProjectSettings>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.SaveActionModifiedLinesOnly>false</de-markiewb-netbeans-plugins-eclipse-formatter46.SaveActionModifiedLinesOnly>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.preserveBreakPoints>true</de-markiewb-netbeans-plugins-eclipse-formatter46.preserveBreakPoints>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.linefeed/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.eclipseFormatterActiveProfile/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.useProjectPref>true</de-markiewb-netbeans-plugins-eclipse-formatter46.useProjectPref>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.eclipseFormatterLocation/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.showNotifications>true</de-markiewb-netbeans-plugins-eclipse-formatter46.showNotifications>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.eclipseFormatterEnabled>false</de-markiewb-netbeans-plugins-eclipse-formatter46.eclipseFormatterEnabled>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.enableFormatAsSaveAction>false</de-markiewb-netbeans-plugins-eclipse-formatter46.enableFormatAsSaveAction>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.sourcelevel/>
+        <de-markiewb-netbeans-plugins-eclipse-formatter46.useProjectSettings>false</de-markiewb-netbeans-plugins-eclipse-formatter46.useProjectSettings>
+        <org-netbeans-modules-javascript2-requirejs.enabled>true</org-netbeans-modules-javascript2-requirejs.enabled>
     </properties>
-    <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
-        <word>ArrayList</word>
-        <word>SWAPSI</word>
-    </spellchecker-wordlist>
 </project-shared-configuration>

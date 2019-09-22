@@ -4,3 +4,7 @@ src/main/webapp/main_Stylesheet.css
 *.war
 .idea
 .vscode
+credentials.tar.gz
+client-secret.json
+api_key.py
+lib/

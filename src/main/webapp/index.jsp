@@ -13,6 +13,9 @@
       <div class="w-nav-right">
           <%@include file="./WEB-INF/Modules/followers.jspf"%>
       </div>
+      <div>
+      <%@include file="./WEB-INF/Modules/add_post.jspf" %>
+      </div>
         <p class="centered">
         </p>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
