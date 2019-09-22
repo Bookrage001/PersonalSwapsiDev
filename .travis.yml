@@ -10,7 +10,7 @@ before_install:
   - tar -xzf credentials.tar.gz
   - mkdir -p lib
 install:
-  - mvn install -DskipTests=true -B -V -Psign -Dgpg.passphrase=$GPG_PASSPHRASE
+  - mvn install
 
 script:
   - mvn test -B
