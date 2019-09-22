@@ -1,12 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="615da592-a686-4050-813f-40eba0a025d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Posts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/PostIndex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/choice_post.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/posts.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/vairablesNimports.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/editPost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/dao/mLabMongoDbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/dao/mLabMongoDbConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/footer.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/footer.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/post.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/post_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/post_edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/footer.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/footer.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post_edit.jsp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="facelets" />
+        <option value="Jsp File" />
+        <option value="jsf" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="generatedSourcesFolder" value="GENERATED_SOURCE_FOLDER" />
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8 (2)" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1RAlgftBwYRGsqdZhJldhtkQZ4f" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="AppEngine Dev 1.9.65" type="GoogleAppEngineDevServer" factoryName="Local" APPLICATION_SERVER_NAME="AppEngine Dev 1.9.65" ALTERNATIVE_JRE_ENABLED="false">
@@ -21,5 +100,36 @@
         </option>
       </method>
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="615da592-a686-4050-813f-40eba0a025d2" name="Default Changelist" comment="" />
+      <created>1569117893867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569117893867</updated>
+      <workItem from="1569117897100" duration="3659000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

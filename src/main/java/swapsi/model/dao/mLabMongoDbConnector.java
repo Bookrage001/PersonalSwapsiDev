@@ -1,6 +1,7 @@
 package swapsi.model.dao;
 
 import com.mongodb.*;
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
@@ -9,8 +10,6 @@ import static com.mongodb.client.model.Filters.eq;
 
 import com.mongodb.util.JSON;
 import org.bson.Document;
-
-import javax.print.Doc;
 
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
@@ -93,6 +92,18 @@ public class mLabMongoDbConnector {
     public void update(Document search, Document replace) {
         MongoCollection<Document> collection = collection();
         collection.replaceOne(search, replace);
+    }
+
+    /**
+     * Established Connection and collecting all document
+     * @param document
+     * @return
+     */
+    public FindIterable<Document> view(Document document){
+        MongoCollection<Document> collection = collection();
+        FindIterable<Document> iterDoc = collection.find(document);
+
+        return iterDoc;
     }
 
     /**

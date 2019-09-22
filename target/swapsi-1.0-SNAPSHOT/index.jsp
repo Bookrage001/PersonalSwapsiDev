@@ -1,6 +1,7 @@
 <%-- Document : index Created on : 18/08/2019, 3:03:43 AM Author : caleb --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
 <html>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +15,7 @@
           <%@include file="./WEB-INF/Modules/followers.jspf"%>
       </div>
       <div>
-      <%@include file="./WEB-INF/Modules/add_post.jspf" %>
+      <%@include file="./WEB-INF/Modules/posts.jspf" %>
       </div>
         <p class="centered">
         </p>
