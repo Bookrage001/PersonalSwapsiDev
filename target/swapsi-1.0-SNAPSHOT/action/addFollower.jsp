@@ -3,6 +3,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page import="swapsi.model.follower.*" %>
+<%@include file="../WEB-INF/Modules/vairablesNimports.jspf"%>
+
 
 <html>
 <head>

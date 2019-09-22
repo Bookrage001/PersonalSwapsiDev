@@ -63,6 +63,14 @@ public class PostController {
         Document query = new Document();
         Iterator it = connection.view(query).iterator();
         return it;
+    }/**
+     * Method that retrieves Posts of the followers that the user has
+     */
+    public Iterator retrievePost(ArrayList followers){
+        Document query = new Document("USER_ID", new Document("$in", followers) );
+
+        Iterator it = connection.view(query).iterator();
+        return it;
     }
 
     /**

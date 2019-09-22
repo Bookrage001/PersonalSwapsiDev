@@ -19,7 +19,7 @@
 <%}
     //retrieves the data I need
     Document result = null;
-    Iterator it = posts.retrievePost();
+    Iterator it = posts.retrievePost(follower.getFolowers());
     while (it.hasNext()) {
         result = (Document) it.next();
 %>
@@ -38,7 +38,7 @@
                     <div class="dropdown-content">
                         <%
                             if (result.getString("USER_ID").contentEquals(username)) {
-                            %>
+                        %>
                         <a href="post_edit.jsp?postID=<%= result.getInteger("POST_ID")%>">edit</a>
                         <a href="post_delete.jsp?postID=<%= result.getInteger("POST_ID")%>">delete</a>
                         <%

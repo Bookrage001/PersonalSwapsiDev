@@ -5,18 +5,6 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
 
-<%
-    String username = "";
-    User user;
-    if (session.getAttribute("UserLogin") != null) {
-            if (username == "") {
-                user = (User) session.getAttribute("UserLogin");
-                username = user.getUSERNAME();
-            }
-            FollowerController followerController = new FollowerController(username);
-    }
-%>
-
 <div class="w-nav">
     <div class="w-nav-left">
         <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo_swapsi.png" alt="Logo" align="center"></a>
