@@ -11,4 +11,15 @@ package swapsi.model.Search;
  */
 public class SearchController {
     
+    /**
+     * Finds searched post
+     * @return 
+     */
+
+    public Iterator searchViewPost() {
+        Document query = new Document();
+        Iterator it = connection.view(query).iterator();
+        return it;
+    }
+
 }
