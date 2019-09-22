@@ -1,32 +1,27 @@
-<%-- Document : index Created on : 17/08/2019, 14:03:43 AM Author : Mark Galulu --%>
-<%@page import="java.util.Iterator"%>
+<%-- 
+    Document   : post_edit
+    Created on : 10/09/2019, 8:16:24 PM
+    Author     : mcant
+--%>
+
 <%@page import="org.bson.Document"%>
+<%@page import="java.util.Iterator"%>
 <%@page import="swapsi.model.Post.PostController"%>
-<%@page import="java.util.Random"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Post Page</title>
-    </head> 
+        <title>JSP Page</title>
+    </head>
     <body>
-        <%@include file="./WEB-INF/Modules/navbar.jspf" %>  
-
+        <%@include file="./WEB-INF/Modules/navbar.jspf" %> 
         <%
-            //User user = (User) session.getAttribute("user");
-            String username = "McChase"; //set for my feature
-            int key = (new Random()).nextInt(999999);
-            String post_text = request.getParameter("postText");
+            String key = request.getParameter("postID");
+            int POST_ID = Integer.parseInt(key);
             PostController posts = new PostController();
-            if (post_text != null) {
-                posts.addPost(key, post_text, 0, 0, " ", username);
-        %>
-        <h3>Post successfully added!</h3>
-
-        <%}
-            //retrieves the data I need
+            //retrieves specific post
             Document result = null;
-            Iterator it = posts.retrievePost();
+            Iterator it = posts.getPost(POST_ID);
             while (it.hasNext()) {
                 result = (Document) it.next();
         %>
@@ -37,29 +32,18 @@
             <div class="post-body">
                 <div class="post-body__header">
                     <h3><%= result.getString("USER_ID")%></h3>
-                    <input type="hidden" name="postID" value="<%= result.getInteger("POST_ID")%>">
-                    <%%>
-                    <div class="more">
-                        <div class="dropdown">
-                            <button class="dropbtn"><i class="fa fa-cog"></i></button>
-                            <div class="dropdown-content">
-                                <a href="post_edit.jsp?postID=<%= result.getInteger("POST_ID")%>">edit</a>
-                                <a href="post_delete.jsp?postID=<%= result.getInteger("POST_ID")%>">delete</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="post-body__content">
-                    <p><%= result.getString("Text")%></p>
+                    <form action="ActionEdit_post.jsp" method="Post">                           
+                        <input type="hidden" name="postIDEdit" value="<%= result.getInteger("POST_ID")%>">
+                        <textarea class="form-control" rows="4" cols="50" name="postTextEdit"><%= result.getString("Text")%></textarea>
+                        <button class="m-post-btn1">Post</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <%
-            }
-        %>   
 
-
-
+        <% }%>
         <%@include file="./WEB-INF/Modules/footer.jspf" %>
     </body>
 </html>
