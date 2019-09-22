@@ -7,7 +7,10 @@
 
 <div class="m-nav">
     <img src="images/logo_swapsi.png" alt="Logo">
-    <input type="text" placeholder="search.." name="search"/>
+    <form action="search_post.jsp" method="Post">        
+        <input type="text" placeholder="search.." name="search"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
     <div class="m-nav-right">        
         <a href="PostIndex.jsp">Discover</a>
         <a href="post.jsp">Post</a>

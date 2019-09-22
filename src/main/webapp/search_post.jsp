@@ -1,34 +1,33 @@
-<%-- Document : index Created on : 17/08/2019, 14:03:43 AM Author : Mark Galulu --%>
+<%-- 
+    Document   : search_post
+    Created on : 22/09/2019, 8:52:22 PM
+    Author     : mcant
+--%>
+
 <%@page import="java.util.Iterator"%>
 <%@page import="org.bson.Document"%>
 <%@page import="swapsi.model.Post.PostController"%>
-<%@page import="java.util.Random"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Post Page</title>
-    </head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Search Results</title>
+    </head>
     <body>
-        <%@include file="./WEB-INF/Modules/navbar.jspf" %>  
+        <%@include file="./WEB-INF/Modules/navbar.jspf" %> 
 
         <%
-            //User user = (User) session.getAttribute("user");
-            String username = "MimosaBrandy"; //set for my feature
-            int key = (new Random()).nextInt(999999);
-            String post_text = request.getParameter("postText");
-            PostController posts = new PostController();
-            if (post_text != null) {
-                posts.addPost(key, post_text, 0, 0, " ", username);
-        %>
-        <h3>Post successfully added!</h3>
+            String search_string = request.getParameter("search");
 
-        <%}
-            //retrieves the data I need
+            PostController posts = new PostController();
+
             Document result = null;
             Iterator it = posts.retrievePost();
             while (it.hasNext()) {
                 result = (Document) it.next();
+                if (result.getString("USER_ID").equalsIgnoreCase(search_string) ||
+                        result.getString("Text").contains(search_string)) {
         %>
         <div class="post">
             <div class="post-image">
@@ -55,11 +54,11 @@
             </div>
         </div>
         <%
+                } //else {
+//            response.sendRedirect("./search_handle.jsp");
+//                }
             }
-        %>   
-
-
-
+        %>
         <%@include file="./WEB-INF/Modules/footer.jspf" %>
     </body>
 </html>

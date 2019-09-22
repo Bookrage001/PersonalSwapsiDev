@@ -14,7 +14,7 @@
 
         <%
             //User user = (User) session.getAttribute("user");
-            String username = "McChase"; //set for my feature
+            String username = "MimosaBrandy"; //set for my feature
             int key = (new Random()).nextInt(999999);
             String post_text = request.getParameter("postText");
             PostController posts = new PostController();
