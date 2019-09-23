@@ -1,9 +1,9 @@
 <%@page import="swapsi.model.follower.*" %>
 
 <%
-    if (username != "") {
-            FollowerController controller = new FollowerController(username);
-        Follower follower = controller.getFollower();
+//    if (username != "") {
+//            FollowerController controller = new FollowerController(username);
+//        Follower follower = controller.getFollower();
 //        if ( session.getAttribute("followers") != null) {
 //            followers = (Followers) session.getAttribute("followers");
 //        } else if (followers == null) {
@@ -22,10 +22,10 @@
     </td>
     </thead>
     <%
-        for (String user: follower.getFolowers() ) {
+//        for (String user1: follower.getFolowers() ) {
     %>
     <td>
-        <%=user%>
+       <!--<=user1%>-->
     </td>
 </table>
 <%
