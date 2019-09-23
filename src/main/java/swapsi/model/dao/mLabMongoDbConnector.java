@@ -1,17 +1,7 @@
-/*
- * Author: Caleb Ardern
- *
- * This class provides the methods to establish a connection between swapsi  
- * and the mlab MongoDBLab cloud Database. The data is saved dynamically on mLab cloud database as
- * as JSON format.
- */
-
 package swapsi.model.dao;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientException;
-import com.mongodb.MongoClientURI;
-import com.mongodb.MongoCredential;
+import com.mongodb.*;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.and;
@@ -19,64 +9,79 @@ import static com.mongodb.client.model.Filters.eq;
 
 import com.mongodb.util.JSON;
 import org.bson.Document;
-import com.mongodb.client.MongoCollection;
+
+import javax.print.Doc;
 
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
     private String dbUrl = "ds163517.mlab.com:63517" + "/" + this.dbName;
     protected String owner;
     protected String password;
-    protected String collection;
+    protected String collectionName;
     private String url;
 
-
-    public mLabMongoDbConnector(String collection) {
-        this.owner = System.getenv("ADMINEMAIL");
+    public mLabMongoDbConnector(String collectionName) {
+        // this.owner = System.getenv("ADMINEMAIL");
         System.out.println(System.getenv("ADMINEMAIL"));
-        this.password = System.getenv("ADMINPASSWORD");
-        this.collection = collection;
+        // this.password = System.getenv("ADMINPASSWORD");
+        this.owner = "swapsiAdmin";
+        this.password = "TJVv58JmWmdPTX5jaM5T5RwXyp7n7xQAd8U2wGt";
+        this.collectionName = collectionName;
         url = "mongodb://" + this.owner + ":" + this.password + "@" + this.dbUrl;
     }
 
     /**
      * Initiate the conection to the db and returns the collection
+     * 
      * @return MongoDB Collection
      */
     public MongoCollection<Document> collection() {
-        System.out.println("Getting Mongo DB");
+        System.out.println("Fetching MongoDB");
         System.out.println(this.toString());
+
         MongoClient mongoClient = new MongoClient(new MongoClientURI(url));
         MongoDatabase db = mongoClient.getDatabase(this.dbName);
-        MongoCollection<Document> collectionDoc = db.getCollection(this.collection);
+        MongoCollection<Document> collectionDoc = db.getCollection(this.collectionName);
         return collectionDoc;
     }
 
     /**
      * Adds a single item to the collection.
+     * 
      * @param document
      */
     public void add(Document document) {
         MongoCollection<Document> collection = collection();
+        System.out.println("Adding following document to " + collectionName);
         System.out.println(JSON.serialize(document));
         collection.insertOne(document);
     }
 
     /**
-     * gets items from the collection depending on the provided parameters
-     * @param query
-     * @param order
+     * Removes a single item from the collection
+     * 
+     * @param document
      */
-    public Document get(Document query, Document order) {
+    public void delete(Document document) {
         MongoCollection<Document> collection = collection();
+        collection.deleteOne(document);
+    }
 
-        MongoCursor<Document> cursor = collection.find(query).sort(order).iterator();
+    /**
+     * gets items from the collection depending on the provided parameters
+     * 
+     * @param query
+     */
+    public BasicDBObject get(Document query) {
+        MongoCollection<Document> collection = collection();
+        MongoCursor<Document> cursor = collection.find(query).iterator();
 
-        Document retrunData = new Document();
+        BasicDBObject retrunData = new BasicDBObject();
         int x = 0;
         try {
             while (cursor.hasNext()) {
                 Document doc = cursor.next();
-                retrunData.append( x + "" , doc);
+                retrunData.put(x + "", doc);
                 x++;
             }
         } finally {
@@ -85,21 +90,25 @@ public class mLabMongoDbConnector {
         return retrunData;
     }
 
+    public void update(Document search, Document replace) {
+        MongoCollection<Document> collection = collection();
+        collection.replaceOne(search, replace);
+    }
+
     /**
-     * Some usfull information about how this class is running.
+     * Some useful information about how this class is running.
+     * 
      * @return
      */
     @Override
-    public String toString(){
+    public String toString() {
         String passwordstatus;
         if (this.password == null) {
             passwordstatus = "No password Provided";
         } else {
             passwordstatus = "Password Hidden";
         }
-        return "Owner: " + this.owner + " Password: " + passwordstatus
-                + " Collection: " + this.collection + "\n"
+        return "Owner: " + this.owner + " Password: " + passwordstatus + " Collection: " + this.collectionName + "\n"
                 + this.dbUrl;
     }
-
 }

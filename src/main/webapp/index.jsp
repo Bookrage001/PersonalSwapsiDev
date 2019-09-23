@@ -3,20 +3,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Home Page</title>
   </head>
   <body>
-      <%@include file="./WEB-INF/Modules/navbar.jspf"%>      
-      <h1 align="center">Hello World!</h1>
-
-      <p class="centered">
-    content
+      <%@include file="./WEB-INF/Modules/navbar.jspf"%>
+      <div class="w-nav-right">
           <%@include file="./WEB-INF/Modules/followers.jspf"%>
-    </P>
+      </div>
+        <p class="centered">
+        </p>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
   </body>
-</html>

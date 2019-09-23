@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4291cff-f081-4844-9b59-675410d264b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bin" beforeDir="false" afterPath="$PROJECT_DIR$/bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Projects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Projects.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Showcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Showcase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Follower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Follower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Followers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Followers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/dao/mLabMongoDbConnectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/dao/mLabMongoDbConnectorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowerControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowerControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowersTest.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QrD7q7AO7617ER9tmmEuVCRtSR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\caleb\Documents\UNI\ASD\Swapsi\src\main\webapp\action" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4291cff-f081-4844-9b59-675410d264b3" name="Default Changelist" comment="" />
+      <created>1568519657630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568519657630</updated>
+      <workItem from="1568519661573" duration="4007000" />
+      <workItem from="1568538772056" duration="15798000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

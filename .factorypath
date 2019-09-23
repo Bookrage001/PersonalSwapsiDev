@@ -1,8 +1,8 @@
 <factorypath>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/google/appengine/appengine-api-1.0-sdk/1.9.65/appengine-api-1.0-sdk-1.9.65.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver/3.4.3/mongodb-driver-3.4.3.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver-core/3.4.3/mongodb-driver-core-3.4.3.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/bson/3.4.3/bson-3.4.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver/3.4.2/mongodb-driver-3.4.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/bson/3.4.2/bson-3.4.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/mongodb/mongodb-driver-core/3.4.2/mongodb-driver-core-3.4.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar" enabled="true" runInBatchMode="false"/>

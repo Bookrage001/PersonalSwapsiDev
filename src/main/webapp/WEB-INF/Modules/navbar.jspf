@@ -1,20 +1,43 @@
+<%@page import="swapsi.model.User.User"%>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%@page import="swapsi.model.*" %>
+<%@page import="swapsi.model.follower.*" %>
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
+
+<%
+    String username = "";
+    User user;
+    if (session.getAttribute("UserLogin") != null) {
+            if (username == "") {
+                user = (User) session.getAttribute("UserLogin");
+                username = user.getUSERNAME();
+            }
+            FollowerController followerController = new FollowerController(username);
+    }
+%>
 
 <div class="w-nav">
-    <img src="images/logo_swapsi.png" alt="Logo" align="center">
-<!--    <div class="search-container">
-        <form action="./WEB-INF/search.jsp">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>-->
-    <div class="w-nav-right">        
+    <div class="w-nav-left">
+        <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo_swapsi.png" alt="Logo" align="center"></a>
+    </div>
+    <div class="w-nav-right">
         <a href="#">Discover</a>
         <span>|</span>
         <a href="#">Projects</a>
         <span>|</span>
-        <a href="#">Profile</a>
-        <span>|</span>
+        <%
+            if (username == "" || username == null) {
+        %>
         <a href="register.jsp">Register</a>
+        <span>|</span>
+        <a href="login.jsp">Login</a>
+        <%
+            } else {
+        %>
+        <a href="${pageContext.request.contextPath}/login.jsp"><i class="fa fa-user" aria-hidden="true"></i> <%=username%></a>
+        <%
+            }
+        %>
     </div>
 </div>
