@@ -3,25 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="615da592-a686-4050-813f-40eba0a025d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/followers.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/followers.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/navbar.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/navbar.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/posts.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/posts.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/vairablesNimports.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/vairablesNimports.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/action/addFollower.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/action/addFollower.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/action/editPost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/action/editPost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/action/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/action/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Post/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Post/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/followers.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/followers.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/navbar.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/navbar.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/posts.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/posts.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/vairablesNimports.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/vairablesNimports.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/addFollower.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/addFollower.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/editPost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/editPost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/action/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODEOWNERS" beforeDir="false" afterPath="$PROJECT_DIR$/CODEOWNERS" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569117893867</updated>
-      <workItem from="1569117897100" duration="8508000" />
+      <workItem from="1569117897100" duration="10298000" />
     </task>
     <servers />
   </component>
