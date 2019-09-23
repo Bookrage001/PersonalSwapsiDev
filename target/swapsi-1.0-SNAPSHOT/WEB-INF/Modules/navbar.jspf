@@ -1,9 +1,12 @@
-<%@page import="swapsi.model.User.User"%>
+<%@page import="swapsi.model.User.*"%>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <%@page import="swapsi.model.*" %>
 <%@page import="swapsi.model.follower.*" %>
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
+
+<!--                username = user.getUSERNAME(); not working, for some reason it cant detected the source-->
+
 
 <%
     String username = "";
@@ -11,7 +14,6 @@
     if (session.getAttribute("UserLogin") != null) {
             if (username == "") {
                 user = (User) session.getAttribute("UserLogin");
-                username = user.getUSERNAME();
             }
             FollowerController followerController = new FollowerController(username);
     }
@@ -25,6 +27,8 @@
         <a href="#">Discover</a>
         <span>|</span>
         <a href="#">Projects</a>
+        <span>|</span>
+        <a href="Showcase.jsp">Showcase</a>
         <span>|</span>
         <%
             if (username == "" || username == null) {

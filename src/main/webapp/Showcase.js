@@ -1,5 +1,5 @@
-$('#next, #prev').click(function(){
+$('#next, #previous').click(function(){
   $('.row').toggleClass('slideLeft');
-})
+});
 
 
