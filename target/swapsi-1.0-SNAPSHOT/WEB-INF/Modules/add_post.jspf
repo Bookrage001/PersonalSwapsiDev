@@ -1,7 +1,0 @@
-<form action="#">
-    <div class="w-centered">
-        <h1>Add Post Prototype</h1>
-        <textarea rows="5" cols="60" placeholder="What is on your mind..."></textarea>
-        <button>Post</button>
-    </div>
-</form>
