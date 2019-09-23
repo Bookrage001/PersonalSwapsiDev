@@ -19,29 +19,30 @@
       <%@include file="./WEB-INF/Modules/navbar.jspf"%>
       <div class="wrapper">
         <div class="row">
-            <div class="col-xs-3 Item1">Project1</div>
+            <div class="col-xs-3 first1">Project1</div>
             
-            <div class="col-xs-3 Item2">Project2</div>
+            <div class="col-xs-3">Project2</div>
             
-            <div class="col-xs-3 Item1">Project3</div>
+            <div class="col-xs-3 last1">Project3</div>
             
-            <div class="col-xs-3 Item2">Project4</div>
+            <div class="col-xs-3">Project4</div>
             
-            <div class="col-xs-3 Item1">Project5</div>
+            <div class="col-xs-3 first1">Project5</div>
             
-            <div class="col-xs-3 Item2">Project6</div>
+            <div class="col-xs-3">Project6</div>
             
-            <div class="col-xs-3 Item1">Project7</div>
+            <div class="col-xs-3 last1">Project7</div>
             
-            <div class="col-xs-3 Item2">Project8</div>
+            <div class="col-xs-3">Project8</div>
             
-            <div class="col-xs-3 Item1">Project9</div>
+            <div class="col-xs-3 first1">Project9</div>
         </div>
       </div>
 
-<div class="cont">
-  <button class="btn" id="previous">Previous</button>
-  <button class="btn" id="next">Next</button>
-</div>
+      <div class="cont">
+        <button class="btn" id="prev">Previous</button>
+        <button class="btn" id="next">Next</button>
+      </div>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
   </body>
+</html>
