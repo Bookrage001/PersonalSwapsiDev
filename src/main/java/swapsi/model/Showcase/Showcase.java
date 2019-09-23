@@ -1,4 +1,4 @@
-package swapsi.model;
+package swapsi.model.Showcase;
 
 import java.io.Serializable;
 import java.util.*;
