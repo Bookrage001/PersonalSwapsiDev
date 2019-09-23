@@ -1,11 +1,13 @@
-swapsi\model\follower\Followers.class
 swapsi\model\follower\Follower.class
-swapsi\model\follower\FollowerController.class
+swapsi\model\Post\Posts.class
 swapsi\model\User\User.class
 swapsi\model\User\UserController.class
 swapsi\model\Project.class
 swapsi\model\User\Users.class
-swapsi\model\Projects.class
 swapsi\controller\ConnServlet.class
 swapsi\model\dao\mLabMongoDbConnector.class
-swapsi\model\Showcase.class
+swapsi\model\Post\Post.class
+swapsi\model\follower\Followers.class
+swapsi\model\follower\FollowerController.class
+swapsi\model\Projects.class
+swapsi\model\Post\PostController.class

@@ -15,7 +15,7 @@
           <%@include file="./WEB-INF/Modules/followers.jspf"%>
       </div>
       <div>
-      <%@include file="./WEB-INF/Modules/posts.jspf" %>
+          <%@include file="./WEB-INF/Modules/posts.jspf" %>
       </div>
         <p class="centered">
         </p>
