@@ -1,8 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<div class="w-footer fontsize1">
+
+<div class="w-footer" class="fontsize1">
       <p class="bold">SWAPSI</p>
       <p id="p1">© 2019</p>
 </div>
-</html>
