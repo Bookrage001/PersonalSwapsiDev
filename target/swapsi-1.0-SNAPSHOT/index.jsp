@@ -11,9 +11,10 @@
   <body>
       <%@include file="./WEB-INF/Modules/navbar.jspf"%>
       <div class="w-nav-right">
-          <%@include file="./WEB-INF/Modules/followers.jspf"%>
+          <%--<%@include file="./WEB-INF/Modules/followers.jspf"%>--%>
       </div>
         <p class="centered">
         </p>
       <%@include file="./WEB-INF/Modules/footer.jspf" %>
   </body>
+</html>

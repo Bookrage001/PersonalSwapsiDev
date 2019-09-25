@@ -1,4 +1,5 @@
 swapsi\model\follower\Followers.class
+swapsi\model\Showcase\ShowcaseController.class
 swapsi\model\follower\Follower.class
 swapsi\model\follower\FollowerController.class
 swapsi\model\User\User.class
@@ -7,5 +8,5 @@ swapsi\model\Project.class
 swapsi\model\User\Users.class
 swapsi\model\Projects.class
 swapsi\controller\ConnServlet.class
+swapsi\model\Showcase\Showcase.class
 swapsi\model\dao\mLabMongoDbConnector.class
-swapsi\model\Showcase.class

@@ -1,0 +1,34 @@
+.wrapper {
+  max-width: 300px;
+  width: 100%;
+  margin: 200px auto;
+  height: 100px;
+  overflow: hidden;
+}
+
+.row {
+  width: 640px;
+  transition: all 0.3s ease;
+}
+
+.col-xs-4,
+.col-xs-3 {
+  height: 100px;
+  background: gold;
+}
+
+.cont {
+  text-align: center;
+}
+
+.Item1 {
+  background: green;
+}
+.Item2 {
+  background: red;
+}
+
+.slideLeft {
+  transition: all 0.3s ease;
+  transform: translateX(-25%);
+}
