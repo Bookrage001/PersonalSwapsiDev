@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4291cff-f081-4844-9b59-675410d264b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin" beforeDir="false" afterPath="$PROJECT_DIR$/bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/bin/target/swapsi-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Projects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Projects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Showcase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Showcase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/User/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/User/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Follower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Follower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Followers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/Followers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/dao/mLabMongoDbConnectorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/dao/mLabMongoDbConnectorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowerControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowerControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/swapsi/model/follower/FollowersTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/project.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,15 +11,83 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/project.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/webapp/project.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectId" id="1QrD7q7AO7617ER9tmmEuVCRtSR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Swapsi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swapsi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swapsi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swapsi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swapsi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swapsi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Swapsi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Swapsi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -76,8 +129,46 @@
       <updated>1568519657630</updated>
       <workItem from="1568519661573" duration="4007000" />
       <workItem from="1568538772056" duration="15798000" />
+      <workItem from="1569222702445" duration="103000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="103000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3299363" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -88,8 +179,28 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -97,5 +208,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
