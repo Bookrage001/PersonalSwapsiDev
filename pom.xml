@@ -104,7 +104,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <version>
+    <build>
         <plugins>
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
@@ -202,5 +202,5 @@
                 <version>0.0.4</version>
             </plugin>
         </plugins>
-    </version>
+    </build>
 </project>
