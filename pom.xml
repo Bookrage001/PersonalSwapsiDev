@@ -104,7 +104,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <build>
+    <version>
         <plugins>
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
@@ -202,19 +202,5 @@
                 <version>0.0.4</version>
             </plugin>
         </plugins>
-    </build>
-    <DistributionManagement>
-        <Repository>
-            <Id>packagecloud-travis</Id>
-            <Url>
-                packagecloud+https://packagecloud.io/capotej/java-test-package
-            </Url>
-        </Repository>
-        <SnapshotRepository>
-            <Id>packagecloud-travis</Id>
-            <Url>
-                packagecloud+https://packagecloud.io/capotej/java-test-package
-            </Url>
-        </SnapshotRepository>
-    </DistributionManagement>
+    </version>
 </project>
