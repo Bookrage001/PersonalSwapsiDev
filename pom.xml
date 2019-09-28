@@ -196,14 +196,12 @@
                     <catalog>${basedir}/src/jax-ws-catalog.xml</catalog>
                 </configuration>
             </plugin>
-        </plugins>
-        <Extensions>
-            <Extension>
+            <plugin>
                 <GroupId>io.packagecloud.maven.wagon</GroupId>
                 <ArtifactId>maven-packagecloud-wagon</ArtifactId>
                 <Version>0.0.4</Version>
-            </Extension>
-        </Extensions>
+            </plugin>
+        </plugins>
     </build>
     <DistributionManagement>
         <Repository>
