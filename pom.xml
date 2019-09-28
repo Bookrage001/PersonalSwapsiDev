@@ -197,9 +197,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <GroupId>io.packagecloud.maven.wagon</GroupId>
-                <ArtifactId>maven-packagecloud-wagon</ArtifactId>
-                <Version>0.0.4</Version>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.4</version>
             </plugin>
         </plugins>
     </build>
