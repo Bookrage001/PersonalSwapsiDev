@@ -19,7 +19,13 @@
 <%}
     //retrieves the data I need
     Document result = null;
-    Iterator it = posts.retrievePost(follower.getFolowers());
+    Iterator it = null;
+    if (username != "") {
+        it = posts.retrievePost(follower.getFolowers());
+    } else {
+        it = posts.retrievePost();
+    }
+
     while (it.hasNext()) {
         result = (Document) it.next();
 %>
@@ -36,14 +42,14 @@
                 <div class="dropdown">
                     <button class="dropbtn"><i class="fa fa-cog"></i></button>
                     <div class="dropdown-content">
-                        <%
+                        <%-- <%
                             if (result.getString("USER_ID").contentEquals(username)) {
-                        %>
+                        %> --%>
                         <a href="post_edit.jsp?postID=<%= result.getInteger("POST_ID")%>">edit</a>
                         <a href="post_delete.jsp?postID=<%= result.getInteger("POST_ID")%>">delete</a>
-                        <%
+                        <%-- <%
                             }
-                        %>
+                        %> --%>
                     </div>
                 </div>
             </div>

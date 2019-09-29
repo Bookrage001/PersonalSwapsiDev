@@ -3,7 +3,7 @@
     Created on : 08/09/2019, 9:09:42 PM
     Author     : mcant
 --%>
-
+<%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,8 +17,7 @@
     </head> 
     <body>
         <%@include file="./WEB-INF/Modules/navbar.jspf" %>
-        <%@include file="./WEB-INF/Modules/choice_post.jspf" %>     
-
+        <%@include file="./WEB-INF/Modules/choice_post.jspf"%>
         <%@include file="./WEB-INF/Modules/footer.jspf" %>
     </body>
 </html>
