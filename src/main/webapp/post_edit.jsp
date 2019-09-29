@@ -36,7 +36,7 @@
                     <h3><%= result.getString("USER_ID")%></h3>
                 </div>
                 <div class="post-body__content">
-                    <form action="action/editPost.jsp" method="Post">                           
+                    <form action="${pageContext.request.contextPath}/action/editPost.jsp" method="Post">
                         <input type="hidden" name="postIDEdit" value="<%= result.getInteger("POST_ID")%>">
                         <textarea class="form-control" rows="4" cols="50" name="postTextEdit"><%= result.getString("Text")%></textarea>
                         <button class="m-post-btn1">Post</button>

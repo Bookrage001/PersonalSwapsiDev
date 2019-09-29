@@ -26,9 +26,9 @@
     Document result = null;
     Iterator it = null;
     if (follower != null) {
-        it = posts.retrievePost();
-    } else {
         it = posts.retrievePost(follower.getFolowers());
+    } else {
+        it = posts.retrievePost();
     }
 
     while (it.hasNext()) {
@@ -44,19 +44,19 @@
             <input type="hidden" name="postID" value="<%= result.getInteger("POST_ID")%>">
             <%%>
             <div class="more">
+                <%
+                    if (result.getString("USER_ID").contentEquals(username)) {
+                %>
                 <div class="dropdown">
                     <button class="dropbtn"><i class="fa fa-cog"></i></button>
                     <div class="dropdown-content">
-                        <%
-                            if (result.getString("USER_ID").contentEquals(username)) {
-                        %>
                         <a href="post_edit.jsp?postID=<%= result.getInteger("POST_ID")%>">edit</a>
                         <a href="post_delete.jsp?postID=<%= result.getInteger("POST_ID")%>">delete</a>
-                        <%
-                            }
-                        %>
                     </div>
                 </div>
+                <%
+                    }
+                %>
             </div>
         </div>
         <div class="post-body__content">

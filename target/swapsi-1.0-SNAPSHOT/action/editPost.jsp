@@ -12,7 +12,7 @@
     <title>Post Page</title>
 </head>
 <body>
-<%@include file="./WEB-INF/Modules/navbar.jspf" %>
+<%@include file="../WEB-INF/Modules/navbar.jspf" %>
 
 <%
     //User user = (User) session.getAttribute("user");
@@ -62,6 +62,6 @@
 
 
 
-<%@include file="./WEB-INF/Modules/footer.jspf" %>
+<%@include file="../WEB-INF/Modules/footer.jspf" %>
 </body>
 </html>
