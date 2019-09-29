@@ -23,7 +23,7 @@
         <a href="#">Profile</a>
         <a href="#">Projects</a>
         <%
-            if (username == "" || username == null) {
+            if (username == "") {
         %>
         <a href="register.jsp">Register</a>
         <a href="login.jsp">Login</a>
