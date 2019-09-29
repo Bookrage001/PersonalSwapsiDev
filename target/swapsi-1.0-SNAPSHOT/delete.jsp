@@ -5,6 +5,7 @@
 --%>
 <%@page import="swapsi.model.User.*"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
+<%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
 
 <!DOCTYPE html>
 <html>
@@ -25,9 +26,9 @@
         user = (User)session.getAttribute("UserLogin");
         
         UserController users = new UserController();
-        users.deleteUser(user.getUSERNAME());  
+            users.deleteUser(user.getUSERNAME());
 
-    %>
+          %>
         <div align="center">
         <p>It's sad to see you go! Your account has been successfully deleted.<p>
         <p><a href="index.jsp">Return to the Main Page</a></p>

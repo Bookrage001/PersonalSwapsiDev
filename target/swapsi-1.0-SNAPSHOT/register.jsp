@@ -6,6 +6,8 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8" import="swapsi.controller.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix = "x" %>
+<%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
+
 <!DOCTYPE html>
 
 <html>

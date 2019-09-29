@@ -7,6 +7,7 @@
 <%@page import="swapsi.model.User.User"%>
 <%@page import="swapsi.model.User.*"%>
 <%@page contentType="text/html" import="java.util.*" pageEncoding="UTF-8"%>
+<%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
 
 <!DOCTYPE html>
 <html>
