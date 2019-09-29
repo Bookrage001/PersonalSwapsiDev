@@ -4,7 +4,11 @@ services:
   - docker
 cache:
   directories:
-    - "$HOME/.cache"
+    - "$HOME/target"
+install:
+  - mvn install
+script:
+  - mvn test -B
 
 deploy:
   provider: script
