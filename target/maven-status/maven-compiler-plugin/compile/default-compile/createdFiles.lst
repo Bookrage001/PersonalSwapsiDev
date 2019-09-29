@@ -5,9 +5,11 @@ swapsi\model\User\UserController.class
 swapsi\model\Project.class
 swapsi\model\User\Users.class
 swapsi\controller\ConnServlet.class
+swapsi\model\Showcase\Showcase.class
 swapsi\model\dao\mLabMongoDbConnector.class
 swapsi\model\Post\Post.class
 swapsi\model\follower\Followers.class
+swapsi\model\Showcase\ShowcaseController.class
 swapsi\model\follower\FollowerController.class
 swapsi\model\Projects.class
 swapsi\model\Post\PostController.class
