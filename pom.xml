@@ -110,6 +110,9 @@
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
                 <version>2.0.0-rc2</version>
+                <configuration>
+                    <deploy.projectId>${env.PROJECTID}</deploy.projectId>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.google.appengine</groupId>
