@@ -7,7 +7,6 @@
 --%>
 <%@include file="../WEB-INF/Modules/vairablesNimports.jspf"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="../WEB-INF/Modules/vairablesNimports.jspf"%>
 
 <html>
 <head>
