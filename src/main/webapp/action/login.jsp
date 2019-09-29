@@ -7,6 +7,8 @@
 --%>
 <%@include file="../WEB-INF/Modules/vairablesNimports.jspf"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="../WEB-INF/Modules/vairablesNimports.jspf"%>
+
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
