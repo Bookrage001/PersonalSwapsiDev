@@ -25,7 +25,7 @@ public class Posts {
     }
 
     /**
-     * add post in the list     
+     * add post in the list
      */
     public void addPost(Post post) {
         if (getUser(post.getUSER_ID()) != null) {

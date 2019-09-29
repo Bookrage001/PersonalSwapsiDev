@@ -12,19 +12,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import swapsi.model.Post.Posts;
+import swapsi.model.User.Users;
+import swapsi.model.dao.mLabMongoDbConnector;
 
 /**
  *
  * @author Caleb
  */
 public class ConnServlet extends HttpServlet {
+
     private mLabMongoDbConnector connector;
-
     private Followers followers;
+    private Users users;
+    private Posts posts;
 
-    @Override // Create and instance of DBConnector for the deployment session
-    public void init() {
-        // followers = new Followers();
+    @Override
+    public void init() throws ServletException {
+        super.init(); // To change body of generated methods, choose Tools | Templates.
+        users = new Users();
+        posts = new Posts();
     }
 
     @Override // Add the classes instances to the session

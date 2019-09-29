@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="swapsi.model.follower.FollowerControllerTest" time="16.111" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="swapsi.model.follower.FollowerControllerTest" time="15.448" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\jre\bin"/>
@@ -62,7 +62,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="swapsi.model.follower.FollowerControllerTest" name="getMongoDB" time="0"/>
-  <testcase classname="swapsi.model.follower.FollowerControllerTest" name="getFollower" time="5.871"/>
+  <testcase classname="swapsi.model.follower.FollowerControllerTest" name="getFollower" time="6.575"/>
   <testcase classname="swapsi.model.follower.FollowerControllerTest" name="update" time="0"/>
-  <testcase classname="swapsi.model.follower.FollowerControllerTest" name="addFollowers" time="10.235"/>
+  <testcase classname="swapsi.model.follower.FollowerControllerTest" name="addFollowers" time="8.865"/>
 </testsuite>

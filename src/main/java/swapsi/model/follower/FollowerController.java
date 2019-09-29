@@ -31,21 +31,23 @@ public class FollowerController {
      */
     public FollowerController() {
         connection = new mLabMongoDbConnector(this.collectionName);
-    } public FollowerController( String user) {
+    }
+
+    public FollowerController(String user) {
         connection = new mLabMongoDbConnector(this.collectionName);
         this.user = user;
     }
 
     /**
      * The class used by external classes to add/create a follower to a user
+     * 
      * @param user_Id
      * @param follower_Id
      */
     public void addFollower(String follower_Id) {
         System.out.println("Adding Follower");
         /**
-         * Security check
-         * Make sure that it is this user that is adding followers
+         * Security check Make sure that it is this user that is adding followers
          */
         if (this.user != "") {
             Follower couple = new Follower(this.user, follower_Id);
@@ -69,18 +71,21 @@ public class FollowerController {
     }
 
     /**
-     * The class used by this controller to add a follower to an existing follower list.
+     * The class used by this controller to add a follower to an existing follower
+     * list.
+     * 
      * @param follower
      */
-    private void updateFollower(Follower follower , String user_Id) {
+    private void updateFollower(Follower follower, String user_Id) {
         follower.addFollower(user_Id);
         Document find = new Document("user_Id", follower.getuser_id());
         Document doc = new Document(this.parseFollower(follower));
-        connection.update(find, doc );
+        connection.replace(find, doc);
     }
 
     /**
      * Creates a new user list with a follower in the DB
+     * 
      * @param follower
      */
     private void createFollower(Follower follower) {
@@ -91,6 +96,7 @@ public class FollowerController {
 
     /**
      * Will get the Follower from the DB and return as a java Follower object
+     * 
      * @param user_Id UniqueId - Search key
      * @return Follower
      */
@@ -98,6 +104,7 @@ public class FollowerController {
         Document query = new Document("user_Id", user_Id);
         return this.parseFollower(connection.get(query));
     }
+
     public Follower getFollower() {
         System.out.println("Getting Follower");
         Document query = new Document("user_Id", this.user);
@@ -106,15 +113,17 @@ public class FollowerController {
 
     /**
      * Converts follower to a doc
+     * 
      * @param follower
      * @return Document
      */
-    private Document parseFollower(Follower follower){
+    private Document parseFollower(Follower follower) {
         return new Document("user_Id", follower.getuser_id()).append("Followers", follower.getFolowers());
     }
 
     /**
      * Converts A document into a follower
+     * 
      * @param doc
      * @return
      */
@@ -125,9 +134,8 @@ public class FollowerController {
         if (!data.isEmpty()) {
             System.out.println((String) data.get("0").get("user_Id"));
             follower = new Follower((String) data.get("0").get("user_Id"));
-            ArrayList<String> users = new ArrayList<String>((ArrayList)data.get("0").get("Followers"));
-            for (String user: users
-            ) {
+            ArrayList<String> users = new ArrayList<String>((ArrayList) data.get("0").get("Followers"));
+            for (String user : users) {
                 follower.addFollower(user);
             }
         }
@@ -137,6 +145,7 @@ public class FollowerController {
 
     /**
      * Will list the followers that this user has.
+     * 
      * @param user_Id
      * @return
      */

@@ -10,6 +10,7 @@ import static com.mongodb.client.model.Filters.eq;
 
 import com.mongodb.util.JSON;
 import org.bson.Document;
+import com.mongodb.client.*;
 
 public class mLabMongoDbConnector {
     private String dbName = "heroku_pfsd0sj5";
@@ -17,6 +18,7 @@ public class mLabMongoDbConnector {
     protected String owner;
     protected String password;
     protected String collectionName;
+    protected String collection;
     private String url;
 
     public mLabMongoDbConnector(String collectionName) {
@@ -56,11 +58,6 @@ public class mLabMongoDbConnector {
         collection.insertOne(document);
     }
 
-    /**
-     * Removes a single item from the collection
-     * 
-     * @param document
-     */
     public void delete(Document document) {
         MongoCollection<Document> collection = collection();
         collection.deleteOne(document);
@@ -89,17 +86,29 @@ public class mLabMongoDbConnector {
         return retrunData;
     }
 
-    public void update(Document search, Document replace) {
+    /**
+     * Update a single document in the collection
+     * 
+     * @param old
+     * @param replace
+     */
+    public void update(Document old, Document replace) {
+        MongoCollection<Document> collection = collection();
+        collection.updateOne(old, replace);
+    }
+
+    public void replace(Document search, Document replace) {
         MongoCollection<Document> collection = collection();
         collection.replaceOne(search, replace);
     }
 
     /**
      * Established Connection and collecting all document
+     * 
      * @param document
      * @return
      */
-    public FindIterable<Document> view(Document document){
+    public FindIterable<Document> view(Document document) {
         MongoCollection<Document> collection = collection();
         FindIterable<Document> iterDoc = collection.find(document);
 

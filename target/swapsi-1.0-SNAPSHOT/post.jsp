@@ -1,8 +1,8 @@
 <%-- Document : index Created on : 17/08/2019, 14:03:43 AM Author : Mark Galulu --%>
 <%@page import="java.util.Iterator"%>
-    <%@page import="org.bson.Document"%>
-    <%@page import="swapsi.model.Post.PostController"%>
-    <%@page import="java.util.Random"%>
+<%@page import="org.bson.Document"%>
+<%@page import="swapsi.model.Post.PostController"%>
+<%@page import="java.util.Random"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="./WEB-INF/Modules/vairablesNimports.jspf"%>
 

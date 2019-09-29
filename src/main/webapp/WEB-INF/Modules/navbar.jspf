@@ -1,24 +1,31 @@
 <%@page import="swapsi.model.User.User"%>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
+<link rel="stylesheet" type="text/css" href="mark_Stylesheet.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<%-- The above may be removed --%>
 <%@page import="swapsi.model.*" %>
 <%@page import="swapsi.model.follower.*" %>
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mainstyle.css" />
 
 <div class="w-nav">
     <div class="w-nav-left">
         <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/images/logo_swapsi.png" alt="Logo" align="center"></a>
     </div>
+    <form action="search_post.jsp" method="Post">        
+        <input type="text" placeholder="search.." name="search"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
     <div class="w-nav-right">
-        <a href="#">Discover</a>
-        <span>|</span>
+        <a href="PostIndex.jsp">Discover</a>
+        <a href="post.jsp">Post</a>
+        <a href="#">Profile</a>
         <a href="#">Projects</a>
-        <span>|</span>
         <%
             if (username == "" || username == null) {
         %>
         <a href="register.jsp">Register</a>
-        <span>|</span>
         <a href="login.jsp">Login</a>
         <%
             } else {

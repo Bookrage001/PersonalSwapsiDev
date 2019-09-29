@@ -22,11 +22,12 @@ public class Post implements Serializable {
     private String POST_PRIVACY;
     private String USER_ID;
 
-    public Post(){
+    public Post() {
         super();
     }
 
-    public Post(int POST_ID, String POST_TEXT, int POST_COMMENT_NUM, int POST_LIKE_NUM, String POST_PRIVACY, String USER_ID) {
+    public Post(int POST_ID, String POST_TEXT, int POST_COMMENT_NUM, int POST_LIKE_NUM, String POST_PRIVACY,
+            String USER_ID) {
         this.POST_ID = POST_ID;
         this.POST_TEXT = POST_TEXT;
         this.POST_COMMENT_NUM = POST_COMMENT_NUM;

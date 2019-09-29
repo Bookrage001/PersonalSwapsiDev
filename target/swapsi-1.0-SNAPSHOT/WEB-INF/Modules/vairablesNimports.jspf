@@ -1,3 +1,6 @@
+<%@page import="swapsi.model.follower.Follower"%>
+<%@page import="swapsi.model.follower.FollowerController"%>
+<%@page import="swapsi.model.User.User"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="org.bson.Document"%>
 <%@page import="swapsi.model.Post.PostController"%>

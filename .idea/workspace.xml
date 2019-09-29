@@ -2,7 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="615da592-a686-4050-813f-40eba0a025d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/ActionEdit_post.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mark_Stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/search_handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/search_post.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/mark_Stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/search_handle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/search_post.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/controller/ConnServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/controller/ConnServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/Post/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/dao/mLabMongoDbConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/dao/mLabMongoDbConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/swapsi/model/follower/FollowerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/swapsi/model/follower/FollowerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/footer.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/footer.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/navbar.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/navbar.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/posts.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/posts.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/vairablesNimports.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Modules/vairablesNimports.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/post.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/post_delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/post_delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Post/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Post/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/Post/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/Post/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.dao.mLabMongoDbConnectorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.dao.mLabMongoDbConnectorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowerControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowerControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-swapsi.model.follower.FollowersTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.dao.mLabMongoDbConnectorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.dao.mLabMongoDbConnectorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowerControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowerControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/swapsi.model.follower.FollowersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/footer.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/footer.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/navbar.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/navbar.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/posts.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/posts.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/vairablesNimports.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/Modules/vairablesNimports.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/controller/ConnServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/controller/ConnServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/Post/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/dao/mLabMongoDbConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/follower/FollowerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/WEB-INF/classes/swapsi/model/follower/FollowerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post_delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/post_delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/swapsi-1.0-SNAPSHOT/welcome.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
