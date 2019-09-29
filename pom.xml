@@ -203,7 +203,5 @@
             </plugin>
         </plugins>
     </build>
-    <deploy>
-        <projectId>swapsipersonalc</projectId>
-    </deploy>
+
 </project>
